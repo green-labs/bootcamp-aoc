@@ -1,0 +1,19 @@
+{
+  "name": "advent-of-code-rescript",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "nodemon $f",
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}

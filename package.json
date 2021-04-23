@@ -1,11 +1,11 @@
 {
-  "name": "advent-of-code-rescript",
+  "name": "rescript-bootcamp",
   "version": "0.1.0",
   "scripts": {
     "dev": "nodemon $f",
-    "clean": "bsb -clean-world",
-    "build": "bsb -make-world",
-    "watch": "bsb -make-world -w"
+    "re:clean": "rescript clean",
+    "re:build": "rescript build",
+    "re:watch": "rescript build -w"
   },
   "keywords": [
     "BuckleScript"
@@ -13,7 +13,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "^8.2.0",
     "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "rescript": "^9.1.1"
   }
 }

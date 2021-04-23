@@ -11,11 +11,8 @@
   },
   "suffix": ".bs.js",
   "bs-dependencies": [],
-  "bsc-flags": [
-    "-open Belt"
-  ],
+  "bsc-flags": [],
   "warnings": {
     "error": "+101"
-  },
-  "refmt": 3
+  }
 }

@@ -90,11 +90,6 @@ braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-bs-platform@^8.2.0:
-  version "8.4.2"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-8.4.2.tgz#778dabd1dfb3bc95e0086c58dabae74e4ebdee8a"
-  integrity sha512-9q7S4/LLV/a68CweN382NJdCCr/lOSsJR3oQYnmPK98ChfO/AdiA3lYQkQTp6T+U0I5Z5RypUAUprNstwDtMDQ==
-
 cacheable-request@^6.0.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/cacheable-request/-/cacheable-request-6.1.0.tgz#20ffb8bd162ba4be11e9567d823db651052ca912"
@@ -611,6 +606,11 @@ registry-url@^5.0.0:
   integrity sha512-8acYXXTI0AkQv6RAOjE3vOaIXZkT9wo4LOFbBKYQEEnnMNBpKqdUrI6S4NT0KPIo/WVvJ5tE/X5LF/TQUf0ekw==
   dependencies:
     rc "^1.2.8"
+
+rescript@^9.1.1:
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/rescript/-/rescript-9.1.1.tgz#de2eb5470a463d7eea493b59537d49bafa6bc5e9"
+  integrity sha512-c+zR5aZ5mXDpAx6oyS61t4sUPiq2VXgHigilYSMazDLp1uUGbf2JvgbSfRJFaKAjfsTKcohJyH0vtdihhdZmMA==
 
 responselike@^1.0.2:
   version "1.0.2"

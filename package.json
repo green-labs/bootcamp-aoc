@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "nodemon $f",
-    "re:clean": "rescript clean",
-    "re:build": "rescript build",
-    "re:watch": "rescript build -w"
+    "clean": "rescript clean",
+    "build": "rescript build",
+    "watch": "rescript build -w"
   },
   "keywords": [
-    "BuckleScript"
+    "ReScript"
   ],
   "author": "",
   "license": "MIT",

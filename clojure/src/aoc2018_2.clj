@@ -26,3 +26,12 @@
 ;; wvxyz
 
 ;; 주어진 예시에서 fguij와 fghij는 같은 위치 (2번째 인덱스)에 정확히 한 문자 (u와 h)가 다름. 따라서 같은 부분인 fgij를 리턴하면 됨.
+
+
+;; #################################
+;; ###        Refactoring        ###
+;; #################################
+
+;; frequencies 사용하기
+;; PPAP (parse-process-aggregate-print) 원칙 따르기
+;; declarative 한 함수 이름 사용하기

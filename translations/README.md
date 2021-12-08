@@ -16,7 +16,7 @@
 
 ### How To
 1. 문제를 올리고 리뷰를 받기 위한 깃헙 Repository 를 생성합니다.
-2. IDE 세팅은 [노션](https://www.notion.so/greenlabs/Setting-IDE-74437b6c1289443fb84d01a28f898822) 을 참고해주세요. (IntelliJ, VS Code)
+2. IDE 세팅은 [노션](https://www.notion.so/greenlabs/Setting-IDE-2362b004362c4897be1bb404a3ed594d) 을 참고해주세요. (IntelliJ, VS Code)
 3. [https://adventofcode.com/](https://adventofcode.com/) 에 가입 합니다.
 4. 각 문제의 input 을 확인합니다.
    - `get your puzzle input` 클릭!

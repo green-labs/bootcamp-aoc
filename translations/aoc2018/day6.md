@@ -34,8 +34,8 @@ aadddeccCc
 bb.deEeecc
 bBb.eeee..
 bbb.eeefff
-bbb.ffffFf
-bbb.eeffff
+bbb.ffffff
+bbb.eeffFf
 ```
 
 여기서 . 으로 표기된 부분은 각 출발 지점으로부터 '같은 거리'에 있는 부분을 뜻함.

@@ -1,0 +1,3151 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.9.0"},cider/cider-nrepl {:mvn/version,"0.27.4"}}}' -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]"
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+Hello world!
+nil
+clj꞉aoc2018-1꞉> 
+(+ 1 2)
+3
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error macroexpanding clojure.core/ns at (src/aoc2018_1.clj:8:1).
+; ((require [clojure.java.io :as io])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6989)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7005)
+clojure.lang.Compiler/macroexpand (Compiler.java:7092)
+clojure.lang.Compiler/eval (Compiler.java:7178)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval7637 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error (ClassNotFoundException) compiling at (.calva/output-window/output.calva-repl:64:22).
+; Thread.java:833
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error macroexpanding clojure.core/ns at (src/aoc2018_1.clj:8:1).
+; ((require [clojure.java.io :as io])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6989)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7005)
+clojure.lang.Compiler/macroexpand (Compiler.java:7092)
+clojure.lang.Compiler/eval (Compiler.java:7178)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval7653 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:12:11).
+; No such namespace: io
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error macroexpanding clojure.core/ns at (src/aoc2018_1.clj:8:1).
+; ((require [clojure.java.io :as io])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6989)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7005)
+clojure.lang.Compiler/macroexpand (Compiler.java:7092)
+clojure.lang.Compiler/eval (Compiler.java:7178)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval7668 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:13:25).
+; Unable to resolve symbol: data-file in this context
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error macroexpanding clojure.core/ns at (src/aoc2018_1.clj:8:1).
+; ((require [clojure.java.io :as io])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6989)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7005)
+clojure.lang.Compiler/macroexpand (Compiler.java:7092)
+clojure.lang.Compiler/eval (Compiler.java:7178)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval7683 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:12:11).
+; No such namespace: io
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error macroexpanding clojure.core/ns at (src/aoc2018_1.clj:8:1).
+; ((require [clojure.java.io :as io])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6989)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7005)
+clojure.lang.Compiler/macroexpand (Compiler.java:7092)
+clojure.lang.Compiler/eval (Compiler.java:7178)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval7698 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error macroexpanding clojure.core/ns at (src/aoc2018_1.clj:8:1).
+; ((require [clojure.java.io :as io])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error macroexpanding clojure.core/ns at (src/aoc2018_1.clj:8:1).
+; ((require [clojure.java.io :as io])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6989)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7005)
+clojure.lang.Compiler/macroexpand (Compiler.java:7092)
+clojure.lang.Compiler/eval (Compiler.java:7178)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval7713 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error macroexpanding clojure.core/ns at (src/aoc2018_1.clj:8:1).
+; ((require [clojure.java.io :as io])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; day1.sample.txt (No such file or directory)
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler$InvokeExpr/eval (Compiler.java:3719)
+clojure.lang.Compiler$DefExpr/eval (Compiler.java:457)
+clojure.lang.Compiler/eval (Compiler.java:7199)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval7728 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; day1.sample.txt (No such file or directory)
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+#'aoc2018-1/input
+clj꞉aoc2018-1꞉> 
+#'aoc2018-1/input
+clj꞉aoc2018-1꞉> 
+""
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (ClassCastException) at aoc2018-1/eval7770 (aoc2018_1.clj:8).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval7758 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (ClassCastException) at aoc2018-1/eval7772 (REPL:8).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (ClassCastException) at aoc2018-1/eval7789 (aoc2018_1.clj:8).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval7777 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (ClassCastException) at aoc2018-1/eval7791 (REPL:8).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (ClassCastException) at aoc2018-1/eval7808 (aoc2018_1.clj:8).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval7796 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (ClassCastException) at aoc2018-1/eval7810 (REPL:8).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (ClassCastException) at aoc2018-1/eval7827 (aoc2018_1.clj:8).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval7815 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (ClassCastException) at aoc2018-1/eval7829 (REPL:8).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error compiling at (src/aoc2018_1.clj:10:18).
+; Unable to resolve symbol: rdr in this context
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6825)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3900)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7126)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3900)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7126)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6401)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7124)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7112)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7112)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6137)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7124)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7112)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6137)
+clojure.lang.Compiler$TryExpr$Parser/parse (Compiler.java:2326)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7124)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6137)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6453)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7124)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6137)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5479)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4041)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7122)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/eval (Compiler.java:7191)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval7834 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:10:18).
+; Unable to resolve symbol: rdr in this context
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; /resources/day1.sample.txt (No such file or directory)
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval7861 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; /resources/day1.sample.txt (No such file or directory)
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+#'aoc2018-1/get-input-data
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; /resources/day1.sample.txt (No such file or directory)
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval8021 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; /resources/day1.sample.txt (No such file or directory)
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; ../resources/day1.sample.txt (No such file or directory)
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval8087 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; ../resources/day1.sample.txt (No such file or directory)
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; day1.sample.txt (No such file or directory)
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval8120 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; day1.sample.txt (No such file or directory)
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+
+; Execution error (NullPointerException) at aoc2018-1/eval8180 (aoc2018_1.clj:9).
+; Cannot invoke "clojure.lang.IFn.invoke()" because the return value of "clojure.lang.IFn.invoke(Object)" is null
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval8168 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+
+; Execution error (NullPointerException) at aoc2018-1/eval8182 (REPL:9).
+; Cannot invoke "clojure.lang.IFn.invoke()" because the return value of "clojure.lang.IFn.invoke(Object)" is null
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+#object[java.net.URL 0x61a9346f file:/Users/1e16miin/bootcamp-aoc/clojure/resources/day1.sample.txt]
+nil
+clj꞉aoc2018-1꞉> 
+#object[java.net.URL 0x61a9346f file:/Users/1e16miin/bootcamp-aoc/clojure/resources/day1.sample.txt]
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error compiling at (src/aoc2018_1.clj:11:25).
+; Unable to resolve symbol: input-file in this context
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6825)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3900)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7126)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3900)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7126)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3900)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7126)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7124)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/eval (Compiler.java:7198)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval8206 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:12:1).
+; Unable to resolve symbol: commment in this context
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error compiling at (src/aoc2018_1.clj:11:25).
+; Unable to resolve symbol: input-file in this context
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6825)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3900)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7126)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3900)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7126)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3900)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7126)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7124)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/eval (Compiler.java:7198)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval8225 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:11:25).
+; Unable to resolve symbol: input-file in this context
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+#'aoc2018-1/inputs
+clj꞉aoc2018-1꞉> 
+#'aoc2018-1/inputs
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error compiling at (src/aoc2018_1.clj:12:1).
+; Unable to resolve symbol: commment in this context
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6825)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3832)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7126)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6137)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5479)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4041)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7122)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/eval (Compiler.java:7191)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval8269 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:12:1).
+; Unable to resolve symbol: commment in this context
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:67).
+; For input string: ""
+(
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval8289 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+()
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:67).
+; For input string: ""
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval8311 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+0
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+490
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; /resources/day1.sample.txt (No such file or directory)
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval8353 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; /resources/day1.sample.txt (No such file or directory)
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+-8
+-13
++17
++7
++12
+-18
++19
++14
+-19
++16
+-10
+-16
+-16
+-8
+-7
++19
++10
+-12
++18
++13
+-20
+-7
+-3
+-2
+-6
+-7
++5
+-16
++2
+-9
++10
+-13
+-18
++9
++18
+-10
+-10
++6
+-7
+-19
+-10
++5
++4
++9
++17
++3
+-18
+-12
+-10
++14
++2
++12
++11
++9
+-18
++17
+-11
+-3
++2
++10
++9
++20
++7
++16
++2
+-1
+-13
+-10
+-15
++24
++17
++11
++4
++19
++1
++16
+-15
+-12
+-2
++11
++15
++14
+-18
++9
++13
+-17
+-9
+-1
++17
+-19
+-19
++23
+-3
++8
+-14
+-6
++5
+-8
+-2
++4
+-11
+-5
++18
++2
++18
++12
++19
++6
+-14
+-1
+-4
++15
++17
+-4
+-20
+-15
++5
++18
+-13
+-1
++15
++18
++7
++14
++12
++16
+-8
++7
++15
+-19
+-16
+-15
+-5
+-10
++6
++12
++1
+-7
++1
++14
++11
+-1
+-15
++3
++14
+-11
+-17
+-6
+-4
++16
+-9
++12
++9
++18
++16
++5
++10
++16
++12
++16
+-5
++15
++9
++7
++6
+-19
++7
++16
++15
++4
+-3
++1
+-10
++16
+-9
++19
++2
++2
++10
+-7
+-14
+-14
+-2
+-7
+-18
+-23
++18
++15
++3
++1
+-12
++7
+-18
++6
+-7
+-12
+-12
+-7
+-4
+-11
+-2
++3
++12
++11
+-18
++17
+-7
+-19
++12
++12
++7
++13
+-10
++5
+-18
+-8
++7
++10
++15
++7
++10
+-7
+-13
+-14
++19
+-7
++23
+-10
+-21
++3
+-6
+-30
++7
++2
+-22
+-4
++8
++17
+-15
++25
+-2
++8
++18
++2
++23
+-20
++19
++20
+-2
++4
+-16
++7
+-11
++15
++13
++8
++3
++14
+-3
+-4
+-11
++2
+-6
+-22
++4
++16
++5
++4
++18
++7
++16
+-14
+-13
++10
++10
++12
++1
++12
++3
++4
++12
++3
++2
++16
+-12
+-11
++19
+-6
++8
++11
++20
+-17
+-11
+-14
+-19
++8
+-3
+-16
++13
+-8
+-18
+-7
+-16
+-10
++11
+-2
+-14
+-2
++19
++18
++8
+-4
++9
++17
++12
++12
++2
+-19
++3
++10
+-16
++17
+-18
+-10
++16
++9
++18
++14
+-1
+-14
++12
+-19
++9
+-6
+-17
+-26
+-21
++13
+-17
++2
+-18
++21
+-7
+-3
++32
+-5
+-16
++3
+-16
+-15
++2
+-24
++40
++16
+-22
++26
+-19
++22
+-20
+-25
+-20
+-13
++20
++57
++14
++6
++22
++17
+-7
+-18
++30
++16
++12
+-22
++5
+-1
++4
+-6
+-31
+-38
++10
++4
++85
++8
+-10
++8
++6
+-5
+-8
++36
++9
++19
+-1
++18
++15
++9
++21
++11
+-7
+-15
++10
++20
+-4
+-19
++16
+-11
+-4
++11
++6
++13
++3
++7
++20
++15
++13
+-10
++9
++3
+-11
++6
++12
++1
++5
+-2
++11
++3
+-16
+-19
+-10
+-12
++8
++20
+-2
+-22
+-10
+-5
++12
+-9
++24
++7
+-13
+-26
+-29
+-8
++19
+-4
+-4
+-46
+-26
+-17
++20
+-17
+-36
+-5
+-18
++21
++8
+-1
++32
++7
++18
++27
++2
++4
+-9
++8
+-17
++48
++4
++6
++28
++14
+-4
++15
++1
++24
+-14
++2
++11
++15
+-16
++3
++62
++15
+-253
+-12
+-27
+-111
++196
++70135
+-1
++17
++13
++8
+-17
+-13
+-11
+-4
+-9
+-13
++1
+-8
+-14
++10
+-3
+-2
++15
++8
+-1
++2
++4
+-1
++6
+-7
++17
++4
+-17
++19
++1
++5
+-19
+-18
+-11
++14
+-13
++2
+-16
++9
+-5
++16
+-13
+-9
+-3
++8
++2
++7
+-19
+-2
++6
+-9
+-12
++11
++7
+-12
+-18
+-3
++5
+-6
++20
++3
+-11
+-13
++3
+-12
+-15
+-7
++10
+-2
++20
++13
+-1
+-3
++16
+-18
+-5
++15
++5
+-4
++3
+-2
++4
++7
++24
++9
++26
+-4
++17
++2
+-17
+-12
+-5
++24
++4
++16
+-4
++7
++7
++20
++1
+-5
++16
+-17
+-13
++3
+-14
++12
++7
+-13
+-15
++3
++13
++19
+-6
+-7
+-9
++17
++1
+-17
+-19
++17
+-11
++4
++2
++10
++25
+-5
++20
+-14
++9
++3
++11
+-15
++18
+-16
++12
++15
+-10
++3
+-12
++17
++11
+-4
++3
+-11
++16
++2
+-4
+-7
++19
+-13
++4
+-18
+-14
+-17
+-4
++7
++11
++8
++16
++14
+-15
+-1
++19
++15
++7
++11
++13
+-3
++1
+-16
+-19
+-8
++9
+-12
+-19
+-7
++15
++9
++3
++15
+-10
++19
+-5
++11
++9
+-3
++1
+-12
+-8
+-10
++5
++2
+-1
++18
+-10
++21
++17
++18
+-16
++6
+-5
+-16
++18
++6
++16
+-3
+-9
++7
++19
+-15
++9
+-6
+-8
++10
++20
++4
+-2
+-8
+-9
++4
++12
+-14
++10
++2
+-11
+-7
++1
+-13
++8
++9
+-3
++10
++5
+-6
+-1
++19
++2
++20
++3
++11
+-8
+-7
++3
+-12
++4
++11
+-14
++17
++16
++7
++10
++17
+-3
++1
++1
+-7
++11
++18
++8
+-3
+-10
++15
+-9
++6
+-8
+-9
++16
+-17
++9
++6
++5
++8
++11
++12
+-17
+-9
++12
++13
++6
+-8
++14
+-17
+-5
++9
++16
++3
+-8
++12
++14
+-19
+-3
+-11
+-10
+-10
++3
++22
+-12
+-19
++14
+-6
+-12
++1
+-19
++8
++13
++4
+-23
+-3
++10
+-20
++14
+-11
+-2
+-16
+-5
+-16
+-8
++1
+-7
++4
++5
+-10
+-14
+-14
+-10
++9
+-18
++10
++19
+-6
+-2
++16
++16
+-4
++21
++12
+-14
++22
++13
+-19
+-5
++2
+-17
++21
+-11
+-9
+-20
+-2
+-15
+-4
++7
+-6
+-5
+-3
+-6
++11
++10
+-17
+-8
++6
+-1
+-29
+-21
++5
+-7
+-16
+-1
+-14
++20
++10
++10
+-3
+-1
+-20
++12
+-9
++3
++1
+-10
+-15
+-5
+-2
++6
+-24
+-15
+-21
+-3
+-12
+-9
++7
++10
+-20
+-19
+-1
++22
++12
++5
+-3
++14
+-42
++4
++13
+-9
++46
++19
++3
++11
++2
++30
+-12
++29
++13
+-41
++15
+-13
+-16
+-9
++20
+-35
+-27
+-100
++1
++2
++7
+-1
+-29
++8
+-40
+-1
+-13
+-24
+-3
+-21
++2
+-22
++16
++14
++22
+-3
++5
+-17
++11
++19
+-28
++54
++6
+-10
+-3
++10
++19
+-135
+-31
+-19
+-10
+-6
++18
++18
+-15
++12
++14
+-7
+-9
+-5
+-7
++10
++20
++13
+-2
+-4
+-1
+-32
+-12
++84
++42
++36
+-106
++26
+-61
++16
++48
+-102
+-64
+-16
++18
+-25
++31
++309
++24
++178
++70218
+-8
+-2
+-18
++1
++18
++3
+-15
+-1
+-11
++17
++2
++11
+-9
++11
+-6
++2
+-8
++11
+-16
+-16
+-5
+-2
++1
++4
+-12
++17
+-11
++4
+-12
+-7
++12
+-4
+-2
+-16
+-140560
+490
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:28:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8413 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+490
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:26:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8431 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (ClassCastException) at aoc2018-1/eval8443$fn (REPL:9).
+; class java.net.URL cannot be cast to class java.io.BufferedReader (java.net.URL and java.io.BufferedReader are in module java.base of loader 'bootstrap')
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:28:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8456 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (ClassCastException) at aoc2018-1/eval8468$fn (REPL:11).
+; class java.net.URL cannot be cast to class java.io.BufferedReader (java.net.URL and java.io.BufferedReader are in module java.base of loader 'bootstrap')
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:28:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8481 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+490
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:30:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8498 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:15:1).
+; Unable to resolve symbol: part1 in this context
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:31:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8514 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:16:14).
+; Unable to resolve symbol: part1 in this context
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:31:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8530 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:16:10).
+; Unable to resolve symbol: part1 in this context
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:30:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8546 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+0
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:30:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8563 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+0
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:30:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8580 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+490
+clj꞉aoc2018-1꞉> 
+""
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:30:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8597 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:9:12).
+; Unable to find static field: parseInt in class java.lang.Integer
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:30:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8613 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+(-8
+ -13
+ 17
+ 7
+ 12
+ -18
+ 19
+ 14
+ -19
+ 16
+ -10
+ -16
+ -16
+ -8
+ -7
+ 19
+ 10
+ -12
+ 18
+ 13
+ -20
+ -7
+ -3
+ -2
+ -6
+ -7
+ 5
+ -16
+ 2
+ -9
+ 10
+ -13
+ -18
+ 9
+ 18
+ -10
+ -10
+ 6
+ -7
+ -19
+ -10
+ 5
+ 4
+ 9
+ 17
+ 3
+ -18
+ -12
+ -10
+ 14
+ ...)
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:30:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8628 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:9:12).
+; Unable to find static field: parseInt in class java.lang.Integer
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:30:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8644 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+(-8
+ -13
+ 17
+ 7
+ 12
+ -18
+ 19
+ 14
+ -19
+ 16
+ -10
+ -16
+ -16
+ -8
+ -7
+ 19
+ 10
+ -12
+ 18
+ 13
+ -20
+ -7
+ -3
+ -2
+ -6
+ -7
+ 5
+ -16
+ 2
+ -9
+ 10
+ -13
+ -18
+ 9
+ 18
+ -10
+ -10
+ 6
+ -7
+ -19
+ -10
+ 5
+ 4
+ 9
+ 17
+ 3
+ -18
+ -12
+ -10
+ 14
+ ...)
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:30:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8659 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+490
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:30:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8676 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+0
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:30:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8693 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:9:10).
+; Unable to find static field: parseInt in class java.lang.Integer
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:30:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8709 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:9:10).
+; Unable to find static field: parseInt in class java.lang.Integer
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:28:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8725 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+""
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:28:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8741 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (ClassCastException) at aoc2018-1/eval8756$fn (REPL:11).
+; class java.net.URL cannot be cast to class java.io.BufferedReader (java.net.URL and java.io.BufferedReader are in module java.base of loader 'bootstrap')
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:28:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8771 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+490
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:27:1).
+; EOF while reading, starting at line 9
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval8789 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (ClassCastException) at aoc2018-1/eval8801$fn (REPL:10).
+; class java.net.URL cannot be cast to class java.io.BufferedReader (java.net.URL and java.io.BufferedReader are in module java.base of loader 'bootstrap')
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; day1.sample.txt (No such file or directory)
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler$InvokeExpr/eval (Compiler.java:3719)
+clojure.lang.Compiler$DefExpr/eval (Compiler.java:457)
+clojure.lang.Compiler/eval (Compiler.java:7199)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval8814 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+0
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; day1.sample.txt (No such file or directory)
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler$InvokeExpr/eval (Compiler.java:3719)
+clojure.lang.Compiler$DefExpr/eval (Compiler.java:457)
+clojure.lang.Compiler/eval (Compiler.java:7199)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval8831 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (ClassCastException) at aoc2018-1/eval8843$fn (REPL:10).
+; class java.net.URL cannot be cast to class java.io.BufferedReader (java.net.URL and java.io.BufferedReader are in module java.base of loader 'bootstrap')
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; day1.sample.txt (No such file or directory)
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler$InvokeExpr/eval (Compiler.java:3719)
+clojure.lang.Compiler$DefExpr/eval (Compiler.java:457)
+clojure.lang.Compiler/eval (Compiler.java:7199)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval8856 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:0:0).
+; Unable to resolve symbol: lst in this context
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error compiling def at (src/aoc2018_1.clj:8:1).
+; Too many arguments to def
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7132)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/eval (Compiler.java:7198)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval8871 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+490
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error compiling def at (src/aoc2018_1.clj:8:1).
+; Too many arguments to def
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7132)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/eval (Compiler.java:7198)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval8888 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:16:1).
+; Unable to resolve symbol: lst in this context
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error (IllegalArgumentException) compiling . at (src/aoc2018_1.clj:9:14).
+; No matching method parseInt found taking 0 args for class java.lang.Integer
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7132)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7112)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3900)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7126)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7124)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/eval (Compiler.java:7198)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval8906 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (IllegalArgumentException) at aoc2018-1/eval8918 (REPL:13).
+; Don't know how to create ISeq from: clojure.lang.Var$Unbound
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+490
+clj꞉aoc2018-1꞉> 
+#'aoc2018-1/numbers
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+490
+clj꞉aoc2018-1꞉> 
+#'aoc2018-1/numbers
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+490
+clj꞉aoc2018-1꞉> 
+#'aoc2018-1/numbers
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error compiling at (src/aoc2018_1.clj:13:1).
+; Unable to resolve symbol: number… in this context
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6825)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3900)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7126)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6137)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5479)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4041)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7122)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/eval (Compiler.java:7191)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval8981 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:13:1).
+; Unable to resolve symbol: number… in this context
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+490
+clj꞉aoc2018-1꞉> 
+490
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+490
+clj꞉aoc2018-1꞉> 
+490
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error macroexpanding clojure.core/let at (src/aoc2018_1.clj:19:1).
+; dict - failed: vector? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6989)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7005)
+clojure.lang.Compiler/macroexpand (Compiler.java:7092)
+clojure.lang.Compiler/eval (Compiler.java:7178)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval9036 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error macroexpanding clojure.core/let at (src/aoc2018_1.clj:19:1).
+; dict - failed: vector? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+(-8 -21 -4 3 15 -3 16 30 11 27 17 1 -15 -23 -30 -11 -1 -13 5 18 -2 -9 -12 -14 -20 -27 -22 -38 -36 -45 -35 -48 -66 -57 -39 -49 -59 -53 -60 -79 -89 -84 -80 -71 -54 -51 -69 -81 -91 -77 -75 -63 -52 -43 -61 -44 -55 -58 -56 -46 -37 -17 -10 6 8 7 -6 -16 -31 -7 10 21 25 44 45 61 46 34 32 43 58 72 54 63 76 59 50 49 66 47 28 51 48 56 42 36 41 33 31 35 24 19 37 39 57 69 88 94 80 79 75 90 107 103 83 68 73 91 78 77 92 110 117 131 143 159 151 158 173 154 138 123 118 108 114 126 127 120 121 135 146 145 130 133 147 136 119 113 109 125 116 128 137 155 171 176 186 202 214 230 225 240 249 256 262 243 250 266 281 285 282 283 273 289 280 299 301 303 313 306 292 278 276 269 251 228 246 261 264 265 253 260 242 248 241 229 217 210 206 195 193 196 208 219 201 218 211 192 204 216 223 236 226 231 213 205 212 222 237 244 254 247 234 220 239 232 255 245 224 227 221 191 198 200 178 174 182 199 184 209 207 215 233 235 258 238 257 277 275 279 263 270 259 274 287 295 298 312 309 305 294 296 290 268 272 288 293 297 315 322 338 324 311 321 331 343 344 356 359 363 375 378 380 396 384 373 392 386 394 405 425 408 397 383 364 372 369 353 366 358 340 333 317 307 318 316 302 300 319 337 345 341 350 367 379 391 393 374 377 387 371 388 370 360 376 385 403 417 416 402 414 395 404 398 381 355 334 347 330 332 314 335 328 325 357 352 336 339 323 308 310 286 326 342 320 346 327 349 329 304 284 271 291 348 362 368 390 407 400 382 412 428 440 418 423 422 426 420 389 351 361 365 450 458 448 456 462 457 449 485 494 513 512 530 545 554 575 586 579 564 574 594 590 571 587 576 572 583 589 602 605 612 632 647 660 650 659 662 651 657 669 670 675 673 684 687 671 652 642 630 638 658 656 634 624 619 631 622 646 653 640 614 585 577 596 592 588 542 516 499 519 502 466 461 443 464 472 471 503 510 528 555 557 561 552 560 543 591 595 601 629 643 639 654 655 679 665 667 678 693 677 680 742 757 504 492 465 354 550 70685 70684 70701 70714 70722 70705 70692 70681 70677 70668 70655 70656 70648 70634 70644 70641 70639 70654 70662 70661 70663 70667 70666 70672 70665 70682 70686 70669 70688 70689 70694 70675 70657 70646 70660 70647 70649 70633 70642 70637 70653 70640 70631 70628 70636 70638 70645 70626 70624 70630 70621 70609 70620 70627 70615 70597 70594 70599 70593 70613 70616 70605 70592 70595 70583 70568 70561 70571 70569 70589 70602 70601 70598 70614 70596 70591 70606 70611 70607 70610 70608 70612 70619 70643 70652 70678 70674 70691 70693 70676 70664 70659 70683 70687 70703 70699 70706 70713 70733 70734 70729 70745 70728 70715 70718 70704 70716 70723 70710 70695 70698 70711 70730 70724 70717 70708 70725 70726 70709 70690 70707 70696 70700 70702 70712 70737 70732 70752 70738 70747 70750 70761 70746 70764 70748 70760 70775 70765 70768 70756 70773 70784 70780 70783 70772 70788 70790 70786 70779 70798 70785 70789 70771 70757 70740 70736 70743 70754 70762 70778 70792 70777 70776 70795 70810 70817 70828 70841 70838 70839 70823 70804 70796 70805 70793 70774 70767 70782 70791 70794 70809 70799 70818 70813 70824 70833 70830 70831 70819 70811 70801 70806 70808 70807 70825 70815 70836 70853 70871 70855 70861 70856 70840 70858 70864 70880 70877 70868 70875 70894 70879 70888 70882 70874 70884 70904 70908 70906 70898 70889 70893 70905 70891 70901 70903 70892 70885 70886 70873 70881 70890 70887 70897 70902 70896 70895 70914 70916 70936 70939 70950 70942 70935 70938 70926 70930 70941 70927 70944 70960 70967 70977 70994 70991 70992 70993 70986 70997 71015 71023 71020 71010 71025 71016 71022 71014 71005 71021 71004 71013 71019 71024 71032 71043 71055 71038 71029 71041 71054 71060 71052 71066 71049 71044 71053 71069 71072 71064 71076 71090 71071 71068 71057 71047 71037 71040 71062 71050 71031 71045 71039 71027 71028 71009 71017 71030 71034 71011 71008 71018 70998 71012 71001 70999 70983 70978 70962 70954 70955 70948 70952 70957 70947 70933 70919 70909 70918 70900 70910 70929 70923 70921 70937 70953 70949 70970 70982 70968 70990 71003 70984 70979 70981 70964 70985 70974 70965 70945 70943 70928 70924 70931 70925 70920 70917 70911 70922 70932 70915 70907 70913 70912 70883 70862 70867 70860 70844 70843 70829 70849 70859 70869 70866 70865 70845 70857 70848 70851 70852 70842 70827 70822 70820 70826 70802 70787 70766 70763 70751 70742 70749 70759 70739 70720 70719 70741 70753 70758 70755 70769 70727 70731 70744 70735 70781 70800 70803 70814 70816 70846 70834 70863 70876 70835 70850 70837 70821 70812 70832 70797 70770 70670 70671 70673 70680 70679 70650 70658 70618 70617 70604 70580 70577 70556 70558 70536 70552 70566 70588 70585 70590 70573 70584 70603 70575 70629 70635 70625 70622 70632 70651 70516 70485 70466 70456 70450 70468 70486 70471 70483 70497 70490 70481 70476 70469 70479 70499 70512 70510 70506 70505 70473 70461 70545 70587 70623 70517 70543 70482 70498 70546 70444 70380 70364 70382 70357 70388 70697 70721 70899 141117 141109 141107 141089 141090 141108 141111 141096 141095 141084 141101 141103 141114 141105 141116 141110 141112 141104 141115 141099 141083 141078 141076 141077 141081 141069 141086 141075 141079 141067 141060 141072 141068 141066 141050 490)
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:22:25).
+; Invalid token: lst:
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval9072 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error reading source at (REPL:22:25).
+; Invalid token: lst:
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:22:26).
+; Invalid token: :lst:
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval9089 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error reading source at (REPL:22:26).
+; Invalid token: :lst:
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:22:26).
+; Invalid token: :lst:
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval9106 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+#'aoc2018-1/number-set
+clj꞉aoc2018-1꞉> 
+#'aoc2018-1/number-set
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:23:26).
+; Invalid token: :lst:
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval9123 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error reading source at (REPL:23:26).
+; Invalid token: :lst:
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:32:1).
+; EOF while reading, starting at line 21
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval9140 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:22:3).
+; Unable to resolve symbol: lst in this context
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (ClassCastException) at aoc2018-1/eval9172 (aoc2018_1.clj:22).
+; class clojure.lang.LazySeq cannot be cast to class java.lang.Number (clojure.lang.LazySeq is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval9158 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (ClassCastException) at aoc2018-1/eval9174 (REPL:22).
+; class clojure.lang.LazySeq cannot be cast to class java.lang.Number (clojure.lang.LazySeq is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error compiling at (src/aoc2018_1.clj:21:1).
+; Can't take value of a macro: #'clojure.core/let
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6825)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6135)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6453)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7124)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6137)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5479)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4041)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7122)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/eval (Compiler.java:7191)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval9179 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:21:1).
+; Can't take value of a macro: #'clojure.core/let
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+(-8 -13 17 7 12 -18 19 14 -19 16 -10 -16 -16 -8 -7 19 10 -12 18 13 -20 -7 -3 -2 -6 -7 5 -16 2 -9 10 -13 -18 9 18 -10 -10 6 -7 -19 -10 5 4 9 17 3 -18 -12 -10 14 2 12 11 9 -18 17 -11 -3 2 10 9 20 7 16 2 -1 -13 -10 -15 24 17 11 4 19 1 16 -15 -12 -2 11 15 14 -18 9 13 -17 -9 -1 17 -19 -19 23 -3 8 -14 -6 5 -8 -2 4 -11 -5 18 2 18 12 19 6 -14 -1 -4 15 17 -4 -20 -15 5 18 -13 -1 15 18 7 14 12 16 -8 7 15 -19 -16 -15 -5 -10 6 12 1 -7 1 14 11 -1 -15 3 14 -11 -17 -6 -4 16 -9 12 9 18 16 5 10 16 12 16 -5 15 9 7 6 -19 7 16 15 4 -3 1 -10 16 -9 19 2 2 10 -7 -14 -14 -2 -7 -18 -23 18 15 3 1 -12 7 -18 6 -7 -12 -12 -7 -4 -11 -2 3 12 11 -18 17 -7 -19 12 12 7 13 -10 5 -18 -8 7 10 15 7 10 -7 -13 -14 19 -7 23 -10 -21 3 -6 -30 7 2 -22 -4 8 17 -15 25 -2 8 18 2 23 -20 19 20 -2 4 -16 7 -11 15 13 8 3 14 -3 -4 -11 2 -6 -22 4 16 5 4 18 7 16 -14 -13 10 10 12 1 12 3 4 12 3 2 16 -12 -11 19 -6 8 11 20 -17 -11 -14 -19 8 -3 -16 13 -8 -18 -7 -16 -10 11 -2 -14 -2 19 18 8 -4 9 17 12 12 2 -19 3 10 -16 17 -18 -10 16 9 18 14 -1 -14 12 -19 9 -6 -17 -26 -2
+1 13 -17 2 -18 21 -7 -3 32 -5 -16 3 -16 -15 2 -24 40 16 -22 26 -19 22 -20 -25 -20 -13 20 57 14 6 22 17 -7 -18 30 16 12 -22 5 -1 4 -6 -31 -38 10 4 85 8 -10 8 6 -5 -8 36 9 19 -1 18 15 9 21 11 -7 -15 10 20 -4 -19 16 -11 -4 11 6 13 3 7 20 15 13 -10 9 3 -11 6 12 1 5 -2 11 3 -16 -19 -10 -12 8 20 -2 -22 -10 -5 12 -9 24 7 -13 -26 -29 -8 19 -4 -4 -46 -26 -17 20 -17 -36 -5 -18 21 8 -1 32 7 18 27 2 4 -9 8 -17 48 4 6 28 14 -4 15 1 24 -14 2 11 15 -16 3 62 15 -253 -12 -27 -111 196 70135 -1 17 13 8 -17 -13 -11 -4 -9 -13 1 -8 -14 10 -3 -2 15 8 -1 2 4 -1 6 -7 17 4 -17 19 1 5 -19 -18 -11 14 -13 2 -16 9 -5 16 -13 -9 -3 8 2 7 -19 -2 6 -9 -12 11 7 -12 -18 -3 5 -6 20 3 -11 -13 3 -12 -15 -7 10 -2 20 13 -1 -3 16 -18 -5 15 5 -4 3 -2 4 7 24 9 26 -4 17 2 -17 -12 -5 24 4 16 -4 7 7 20 1 -5 16 -17 -13 3 -14 12 7 -13 -15 3 13 19 -6 -7 -9 17 1 -17 -19 17 -11 4 2 10 25 -5 20 -14 9 3 11 -15 18 -16 12 15 -10 3 -12 17 11 -4 3 -11 16 2 -4 -7 19 -13 4 -18 -14 -17 -4 7 11 8 16 14 -15 -1 19 15 7 11 13 -3 1 -16 -19 -8 9 -12 -19 -7 15 9 3 15 -10 19 -
+5 11 9 -3 1 -12 -8 -10 5 2 -1 18 -10 21 17 18 -16 6 -5 -16 18 6 16 -3 -9 7 19 -15 9 -6 -8 10 20 4 -2 -8 -9 4 12 -14 10 2 -11 -7 1 -13 8 9 -3 10 5 -6 -1 19 2 20 3 11 -8 -7 3 -12 4 11 -14 17 16 7 10 17 -3 1 1 -7 11 18 8 -3 -10 15 -9 6 -8 -9 16 -17 9 6 5 8 11 12 -17 -9 12 13 6 -8 14 -17 -5 9 16 3 -8 12 14 -19 -3 -11 -10 -10 3 22 -12 -19 14 -6 -12 1 -19 8 13 4 -23 -3 10 -20 14 -11 -2 -16 -5 -16 -8 1 -7 4 5 -10 -14 -14 -10 9 -18 10 19 -6 -2 16 16 -4 21 12 -14 22 13 -19 -5 2 -17 21 -11 -9 -20 -2 -15 -4 7 -6 -5 -3 -6 11 10 -17 -8 6 -1 -29 -21 5 -7 -16 -1 -14 20 10 10 -3 -1 -20 12 -9 3 1 -10 -15 -5 -2 6 -24 -15 -21 -3 -12 -9 7 10 -20 -19 -1 22 12 5 -3 14 -42 4 13 -9 46 19 3 11 2 30 -12 29 13 -41 15 -13 -16 -9 20 -35 -27 -100 1 2 7 -1 -29 8 -40 -1 -13 -24 -3 -21 2 -22 16 14 22 -3 5 -17 11 19 -28 54 6 -10 -3 10 19 -135 -31 -19 -10 -6 18 18 -15 12 14 -7 -9 -5 -7 10 20 13 -2 -4 -1 -32 -12 84 42 36 -106 26 -61 16 48 -102 -64 -16 18 -25 31 309 24 178 70218 -8 -2 -18 1 18 3 -15 -1 -11 17 2 11 -9 11 -6 2 -8 11 -16 -16 -5 -2 
+1 4 -12 17 -11 4 -12 -7 12 -4 -2 -16 -140560)
+nil
+clj꞉aoc2018-1꞉> 
+(-8 -13 17 7 12 -18 19 14 -19 16 -10 -16 -16 -8 -7 19 10 -12 18 13 -20 -7 -3 -2 -6 -7 5 -16 2 -9 10 -13 -18 9 18 -10 -10 6 -7 -19 -10 5 4 9 17 3 -18 -12 -10 14 2 12 11 9 -18 17 -11 -3 2 10 9 20 7 16 2 -1 -13 -10 -15 24 17 11 4 19 1 16 -15 -12 -2 11 15 14 -18 9 13 -17 -9 -1 17 -19 -19 23 -3 8 -14 -6 5 -8 -2 4 -11 -5 18 2 18 12 19 6 -14 -1 -4 15 17 -4 -20 -15 5 18 -13 -1 15 18 7 14 12 16 -8 7 15 -19 -16 -15 -5 -10 6 12 1 -7 1 14 11 -1 -15 3 14 -11 -17 -6 -4 16 -9 12 9 18 16 5 10 16 12 16 -5 15 9 7 6 -19 7 16 15 4 -3 1 -10 16 -9 19 2 2 10 -7 -14 -14 -2 -7 -18 -23 18 15 3 1 -12 7 -18 6 -7 -12 -12 -7 -4 -11 -2 3 12 11 -18 17 -7 -19 12 12 7 13 -10 5 -18 -8 7 10 15 7 10 -7 -13 -14 19 -7 23 -10 -21 3 -6 -30 7 2 -22 -4 8 17 -15 25 -2 8 18 2 23 -20 19 20 -2 4 -16 7 -11 15 13 8 3 14 -3 -4 -11 2 -6 -22 4 16 5 4 18 7 16 -14 -13 10 10 12 1 12 3 4 12 3 2 16 -12 -11 19 -6 8 11 20 -17 -11 -14 -19 8 -3 -16 13 -8 -18 -7 -16 -10 11 -2 -14 -2 19 18 8 -4 9 17 12 12 2 -19 3 10 -16 17 -18 -10 16 9 18 14 -1 -14 12 -19 9 -6 -17 -26 -2
+1 13 -17 2 -18 21 -7 -3 32 -5 -16 3 -16 -15 2 -24 40 16 -22 26 -19 22 -20 -25 -20 -13 20 57 14 6 22 17 -7 -18 30 16 12 -22 5 -1 4 -6 -31 -38 10 4 85 8 -10 8 6 -5 -8 36 9 19 -1 18 15 9 21 11 -7 -15 10 20 -4 -19 16 -11 -4 11 6 13 3 7 20 15 13 -10 9 3 -11 6 12 1 5 -2 11 3 -16 -19 -10 -12 8 20 -2 -22 -10 -5 12 -9 24 7 -13 -26 -29 -8 19 -4 -4 -46 -26 -17 20 -17 -36 -5 -18 21 8 -1 32 7 18 27 2 4 -9 8 -17 48 4 6 28 14 -4 15 1 24 -14 2 11 15 -16 3 62 15 -253 -12 -27 -111 196 70135 -1 17 13 8 -17 -13 -11 -4 -9 -13 1 -8 -14 10 -3 -2 15 8 -1 2 4 -1 6 -7 17 4 -17 19 1 5 -19 -18 -11 14 -13 2 -16 9 -5 16 -13 -9 -3 8 2 7 -19 -2 6 -9 -12 11 7 -12 -18 -3 5 -6 20 3 -11 -13 3 -12 -15 -7 10 -2 20 13 -1 -3 16 -18 -5 15 5 -4 3 -2 4 7 24 9 26 -4 17 2 -17 -12 -5 24 4 16 -4 7 7 20 1 -5 16 -17 -13 3 -14 12 7 -13 -15 3 13 19 -6 -7 -9 17 1 -17 -19 17 -11 4 2 10 25 -5 20 -14 9 3 11 -15 18 -16 12 15 -10 3 -12 17 11 -4 3 -11 16 2 -4 -7 19 -13 4 -18 -14 -17 -4 7 11 8 16 14 -15 -1 19 15 7 11 13 -3 1 -16 -19 -8 9 -12 -19 -7 15 9 3 15 -10 19 -
+5 11 9 -3 1 -12 -8 -10 5 2 -1 18 -10 21 17 18 -16 6 -5 -16 18 6 16 -3 -9 7 19 -15 9 -6 -8 10 20 4 -2 -8 -9 4 12 -14 10 2 -11 -7 1 -13 8 9 -3 10 5 -6 -1 19 2 20 3 11 -8 -7 3 -12 4 11 -14 17 16 7 10 17 -3 1 1 -7 11 18 8 -3 -10 15 -9 6 -8 -9 16 -17 9 6 5 8 11 12 -17 -9 12 13 6 -8 14 -17 -5 9 16 3 -8 12 14 -19 -3 -11 -10 -10 3 22 -12 -19 14 -6 -12 1 -19 8 13 4 -23 -3 10 -20 14 -11 -2 -16 -5 -16 -8 1 -7 4 5 -10 -14 -14 -10 9 -18 10 19 -6 -2 16 16 -4 21 12 -14 22 13 -19 -5 2 -17 21 -11 -9 -20 -2 -15 -4 7 -6 -5 -3 -6 11 10 -17 -8 6 -1 -29 -21 5 -7 -16 -1 -14 20 10 10 -3 -1 -20 12 -9 3 1 -10 -15 -5 -2 6 -24 -15 -21 -3 -12 -9 7 10 -20 -19 -1 22 12 5 -3 14 -42 4 13 -9 46 19 3 11 2 30 -12 29 13 -41 15 -13 -16 -9 20 -35 -27 -100 1 2 7 -1 -29 8 -40 -1 -13 -24 -3 -21 2 -22 16 14 22 -3 5 -17 11 19 -28 54 6 -10 -3 10 19 -135 -31 -19 -10 -6 18 18 -15 12 14 -7 -9 -5 -7 10 20 13 -2 -4 -1 -32 -12 84 42 36 -106 26 -61 16 48 -102 -64 -16 18 -25 31 309 24 178 70218 -8 -2 -18 1 18 3 -15 -1 -11 17 2 11 -9 11 -6 2 -8 11 -16 -16 -5 -2 
+1 4 -12 17 -11 4 -12 -7 12 -4 -2 -16 -140560)
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+(-8 -21 -4 3 15 -3 16 30 11 27 17 1 -15 -23 -30 -11 -1 -13 5 18 -2 -9 -12 -14 -20 -27 -22 -38 -36 -45 -35 -48 -66 -57 -39 -49 -59 -53 -60 -79 -89 -84 -80 -71 -54 -51 -69 -81 -91 -77 -75 -63 -52 -43 -61 -44 -55 -58 -56 -46 -37 -17 -10 6 8 7 -6 -16 -31 -7 10 21 25 44 45 61 46 34 32 43 58 72 54 63 76 59 50 49 66 47 28 51 48 56 42 36 41 33 31 35 24 19 37 39 57 69 88 94 80 79 75 90 107 103 83 68 73 91 78 77 92 110 117 131 143 159 151 158 173 154 138 123 118 108 114 126 127 120 121 135 146 145 130 133 147 136 119 113 109 125 116 128 137 155 171 176 186 202 214 230 225 240 249 256 262 243 250 266 281 285 282 283 273 289 280 299 301 303 313 306 292 278 276 269 251 228 246 261 264 265 253 260 242 248 241 229 217 210 206 195 193 196 208 219 201 218 211 192 204 216 223 236 226 231 213 205 212 222 237 244 254 247 234 220 239 232 255 245 224 227 221 191 198 200 178 174 182 199 184 209 207 215 233 235 258 238 257 277 275 279 263 270 259 274 287 295 298 312 309 305 294 296 290 268 272 288 293 297 315 322 338 324 311 321 331
+ 343 344 356 359 363 375 378 380 396 384 373 392 386 394 405 425 408 397 383 364 372 369 353 366 358 340 333 317 307 318 316 302 300 319 337 345 341 350 367 379 391 393 374 377 387 371 388 370 360 376 385 403 417 416 402 414 395 404 398 381 355 334 347 330 332 314 335 328 325 357 352 336 339 323 308 310 286 326 342 320 346 327 349 329 304 284 271 291 348 362 368 390 407 400 382 412 428 440 418 423 422 426 420 389 351 361 365 450 458 448 456 462 457 449 485 494 513 512 530 545 554 575 586 579 564 574 594 590 571 587 576 572 583 589 602 605 612 632 647 660 650 659 662 651 657 669 670 675 673 684 687 671 652 642 630 638 658 656 634 624 619 631 622 646 653 640 614 585 577 596 592 588 542 516 499 519 502 466 461 443 464 472 471 503 510 528 555 557 561 552 560 543 591 595 601 629 643 639 654 655 679 665 667 678 693 677 680 742 757 504 492 465 354 550 70685 70684 70701 70714 70722 70705 70692 70681 70677 70668 70655 70656 70648 70634 70644 70641 70639 70654 70662 70661 70663 70667 70666 70672 70665 70682 70686 70669
+ 70688 70689 70694 70675 70657 70646 70660 70647 70649 70633 70642 70637 70653 70640 70631 70628 70636 70638 70645 70626 70624 70630 70621 70609 70620 70627 70615 70597 70594 70599 70593 70613 70616 70605 70592 70595 70583 70568 70561 70571 70569 70589 70602 70601 70598 70614 70596 70591 70606 70611 70607 70610 70608 70612 70619 70643 70652 70678 70674 70691 70693 70676 70664 70659 70683 70687 70703 70699 70706 70713 70733 70734 70729 70745 70728 70715 70718 70704 70716 70723 70710 70695 70698 70711 70730 70724 70717 70708 70725 70726 70709 70690 70707 70696 70700 70702 70712 70737 70732 70752 70738 70747 70750 70761 70746 70764 70748 70760 70775 70765 70768 70756 70773 70784 70780 70783 70772 70788 70790 70786 70779 70798 70785 70789 70771 70757 70740 70736 70743 70754 70762 70778 70792 70777 70776 70795 70810 70817 70828 70841 70838 70839 70823 70804 70796 70805 70793 70774 70767 70782 70791 70794 70809 70799 70818 70813 70824 70833 70830 70831 70819 70811 70801 70806 70808 70807 70825 70815 70836 70853 708
+71 70855 70861 70856 70840 70858 70864 70880 70877 70868 70875 70894 70879 70888 70882 70874 70884 70904 70908 70906 70898 70889 70893 70905 70891 70901 70903 70892 70885 70886 70873 70881 70890 70887 70897 70902 70896 70895 70914 70916 70936 70939 70950 70942 70935 70938 70926 70930 70941 70927 70944 70960 70967 70977 70994 70991 70992 70993 70986 70997 71015 71023 71020 71010 71025 71016 71022 71014 71005 71021 71004 71013 71019 71024 71032 71043 71055 71038 71029 71041 71054 71060 71052 71066 71049 71044 71053 71069 71072 71064 71076 71090 71071 71068 71057 71047 71037 71040 71062 71050 71031 71045 71039 71027 71028 71009 71017 71030 71034 71011 71008 71018 70998 71012 71001 70999 70983 70978 70962 70954 70955 70948 70952 70957 70947 70933 70919 70909 70918 70900 70910 70929 70923 70921 70937 70953 70949 70970 70982 70968 70990 71003 70984 70979 70981 70964 70985 70974 70965 70945 70943 70928 70924 70931 70925 70920 70917 70911 70922 70932 70915 70907 70913 70912 70883 70862 70867 70860 70844 70843 70829 7
+0849 70859 70869 70866 70865 70845 70857 70848 70851 70852 70842 70827 70822 70820 70826 70802 70787 70766 70763 70751 70742 70749 70759 70739 70720 70719 70741 70753 70758 70755 70769 70727 70731 70744 70735 70781 70800 70803 70814 70816 70846 70834 70863 70876 70835 70850 70837 70821 70812 70832 70797 70770 70670 70671 70673 70680 70679 70650 70658 70618 70617 70604 70580 70577 70556 70558 70536 70552 70566 70588 70585 70590 70573 70584 70603 70575 70629 70635 70625 70622 70632 70651 70516 70485 70466 70456 70450 70468 70486 70471 70483 70497 70490 70481 70476 70469 70479 70499 70512 70510 70506 70505 70473 70461 70545 70587 70623 70517 70543 70482 70498 70546 70444 70380 70364 70382 70357 70388 70697 70721 70899 141117 141109 141107 141089 141090 141108 141111 141096 141095 141084 141101 141103 141114 141105 141116 141110 141112 141104 141115 141099 141083 141078 141076 141077 141081 141069 141086 141075 141079 141067 141060 141072 141068 141066 141050 490)
+nil
+clj꞉aoc2018-1꞉> 
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+#function[clojure.core/reductions]
+nil
+clj꞉aoc2018-1꞉> 
+#function[clojure.core/reductions]
+nil
+clj꞉aoc2018-1꞉> 
+#function[clojure.core/reductions]
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+(-8 -13 17 7 12 -18 19 14 -19 16 -10 -16 -16 -8 -7 19 10 -12 18 13 -20 -7 -3 -2 -6 -7 5 -16 2 -9 10 -13 -18 9 18 -10 -10 6 -7 -19 -10 5 4 9 17 3 -18 -12 -10 14 2 12 11 9 -18 17 -11 -3 2 10 9 20 7 16 2 -1 -13 -10 -15 24 17 11 4 19 1 16 -15 -12 -2 11 15 14 -18 9 13 -17 -9 -1 17 -19 -19 23 -3 8 -14 -6 5 -8 -2 4 -11 -5 18 2 18 12 19 6 -14 -1 -4 15 17 -4 -20 -15 5 18 -13 -1 15 18 7 14 12 16 -8 7 15 -19 -16 -15 -5 -10 6 12 1 -7 1 14 11 -1 -15 3 14 -11 -17 -6 -4 16 -9 12 9 18 16 5 10 16 12 16 -5 15 9 7 6 -19 7 16 15 4 -3 1 -10 16 -9 19 2 2 10 -7 -14 -14 -2 -7 -18 -23 18 15 3 1 -12 7 -18 6 -7 -12 -12 -7 -4 -11 -2 3 12 11 -18 17 -7 -19 12 12 7 13 -10 5 -18 -8 7 10 15 7 10 -7 -13 -14 19 -7 23 -10 -21 3 -6 -30 7 2 -22 -4 8 17 -15 25 -2 8 18 2 23 -20 19 20 -2 4 -16 7 -11 15 13 8 3 14 -3 -4 -11 2 -6 -22 4 16 5 4 18 7 16 -14 -13 10 10 12 1 12 3 4 12 3 2 16 -12 -11 19 -6 8 11 20 -17 -11 -14 -19 8 -3 -16 13 -8 -18 -7 -16 -10 11 -2 -14 -2 19 18 8 -4 9 17 12 12 2 -19 3 10 -16 17 -18 -10 16 9 18 14 -1 -14 12 -19 9 -6 -17 -26 -2
+1 13 -17 2 -18 21 -7 -3 32 -5 -16 3 -16 -15 2 -24 40 16 -22 26 -19 22 -20 -25 -20 -13 20 57 14 6 22 17 -7 -18 30 16 12 -22 5 -1 4 -6 -31 -38 10 4 85 8 -10 8 6 -5 -8 36 9 19 -1 18 15 9 21 11 -7 -15 10 20 -4 -19 16 -11 -4 11 6 13 3 7 20 15 13 -10 9 3 -11 6 12 1 5 -2 11 3 -16 -19 -10 -12 8 20 -2 -22 -10 -5 12 -9 24 7 -13 -26 -29 -8 19 -4 -4 -46 -26 -17 20 -17 -36 -5 -18 21 8 -1 32 7 18 27 2 4 -9 8 -17 48 4 6 28 14 -4 15 1 24 -14 2 11 15 -16 3 62 15 -253 -12 -27 -111 196 70135 -1 17 13 8 -17 -13 -11 -4 -9 -13 1 -8 -14 10 -3 -2 15 8 -1 2 4 -1 6 -7 17 4 -17 19 1 5 -19 -18 -11 14 -13 2 -16 9 -5 16 -13 -9 -3 8 2 7 -19 -2 6 -9 -12 11 7 -12 -18 -3 5 -6 20 3 -11 -13 3 -12 -15 -7 10 -2 20 13 -1 -3 16 -18 -5 15 5 -4 3 -2 4 7 24 9 26 -4 17 2 -17 -12 -5 24 4 16 -4 7 7 20 1 -5 16 -17 -13 3 -14 12 7 -13 -15 3 13 19 -6 -7 -9 17 1 -17 -19 17 -11 4 2 10 25 -5 20 -14 9 3 11 -15 18 -16 12 15 -10 3 -12 17 11 -4 3 -11 16 2 -4 -7 19 -13 4 -18 -14 -17 -4 7 11 8 16 14 -15 -1 19 15 7 11 13 -3 1 -16 -19 -8 9 -12 -19 -7 15 9 3 15 -10 19 -
+5 11 9 -3 1 -12 -8 -10 5 2 -1 18 -10 21 17 18 -16 6 -5 -16 18 6 16 -3 -9 7 19 -15 9 -6 -8 10 20 4 -2 -8 -9 4 12 -14 10 2 -11 -7 1 -13 8 9 -3 10 5 -6 -1 19 2 20 3 11 -8 -7 3 -12 4 11 -14 17 16 7 10 17 -3 1 1 -7 11 18 8 -3 -10 15 -9 6 -8 -9 16 -17 9 6 5 8 11 12 -17 -9 12 13 6 -8 14 -17 -5 9 16 3 -8 12 14 -19 -3 -11 -10 -10 3 22 -12 -19 14 -6 -12 1 -19 8 13 4 -23 -3 10 -20 14 -11 -2 -16 -5 -16 -8 1 -7 4 5 -10 -14 -14 -10 9 -18 10 19 -6 -2 16 16 -4 21 12 -14 22 13 -19 -5 2 -17 21 -11 -9 -20 -2 -15 -4 7 -6 -5 -3 -6 11 10 -17 -8 6 -1 -29 -21 5 -7 -16 -1 -14 20 10 10 -3 -1 -20 12 -9 3 1 -10 -15 -5 -2 6 -24 -15 -21 -3 -12 -9 7 10 -20 -19 -1 22 12 5 -3 14 -42 4 13 -9 46 19 3 11 2 30 -12 29 13 -41 15 -13 -16 -9 20 -35 -27 -100 1 2 7 -1 -29 8 -40 -1 -13 -24 -3 -21 2 -22 16 14 22 -3 5 -17 11 19 -28 54 6 -10 -3 10 19 -135 -31 -19 -10 -6 18 18 -15 12 14 -7 -9 -5 -7 10 20 13 -2 -4 -1 -32 -12 84 42 36 -106 26 -61 16 48 -102 -64 -16 18 -25 31 309 24 178 70218 -8 -2 -18 1 18 3 -15 -1 -11 17 2 11 -9 11 -6 2 -8 11 -16 -16 -5 -2 
+1 4 -12 17 -11 4 -12 -7 12 -4 -2 -16 -140560)
+nil
+clj꞉aoc2018-1꞉> 
+(-8 -13 17 7 12 -18 19 14 -19 16 -10 -16 -16 -8 -7 19 10 -12 18 13 -20 -7 -3 -2 -6 -7 5 -16 2 -9 10 -13 -18 9 18 -10 -10 6 -7 -19 -10 5 4 9 17 3 -18 -12 -10 14 2 12 11 9 -18 17 -11 -3 2 10 9 20 7 16 2 -1 -13 -10 -15 24 17 11 4 19 1 16 -15 -12 -2 11 15 14 -18 9 13 -17 -9 -1 17 -19 -19 23 -3 8 -14 -6 5 -8 -2 4 -11 -5 18 2 18 12 19 6 -14 -1 -4 15 17 -4 -20 -15 5 18 -13 -1 15 18 7 14 12 16 -8 7 15 -19 -16 -15 -5 -10 6 12 1 -7 1 14 11 -1 -15 3 14 -11 -17 -6 -4 16 -9 12 9 18 16 5 10 16 12 16 -5 15 9 7 6 -19 7 16 15 4 -3 1 -10 16 -9 19 2 2 10 -7 -14 -14 -2 -7 -18 -23 18 15 3 1 -12 7 -18 6 -7 -12 -12 -7 -4 -11 -2 3 12 11 -18 17 -7 -19 12 12 7 13 -10 5 -18 -8 7 10 15 7 10 -7 -13 -14 19 -7 23 -10 -21 3 -6 -30 7 2 -22 -4 8 17 -15 25 -2 8 18 2 23 -20 19 20 -2 4 -16 7 -11 15 13 8 3 14 -3 -4 -11 2 -6 -22 4 16 5 4 18 7 16 -14 -13 10 10 12 1 12 3 4 12 3 2 16 -12 -11 19 -6 8 11 20 -17 -11 -14 -19 8 -3 -16 13 -8 -18 -7 -16 -10 11 -2 -14 -2 19 18 8 -4 9 17 12 12 2 -19 3 10 -16 17 -18 -10 16 9 18 14 -1 -14 12 -19 9 -6 -17 -26 -2
+1 13 -17 2 -18 21 -7 -3 32 -5 -16 3 -16 -15 2 -24 40 16 -22 26 -19 22 -20 -25 -20 -13 20 57 14 6 22 17 -7 -18 30 16 12 -22 5 -1 4 -6 -31 -38 10 4 85 8 -10 8 6 -5 -8 36 9 19 -1 18 15 9 21 11 -7 -15 10 20 -4 -19 16 -11 -4 11 6 13 3 7 20 15 13 -10 9 3 -11 6 12 1 5 -2 11 3 -16 -19 -10 -12 8 20 -2 -22 -10 -5 12 -9 24 7 -13 -26 -29 -8 19 -4 -4 -46 -26 -17 20 -17 -36 -5 -18 21 8 -1 32 7 18 27 2 4 -9 8 -17 48 4 6 28 14 -4 15 1 24 -14 2 11 15 -16 3 62 15 -253 -12 -27 -111 196 70135 -1 17 13 8 -17 -13 -11 -4 -9 -13 1 -8 -14 10 -3 -2 15 8 -1 2 4 -1 6 -7 17 4 -17 19 1 5 -19 -18 -11 14 -13 2 -16 9 -5 16 -13 -9 -3 8 2 7 -19 -2 6 -9 -12 11 7 -12 -18 -3 5 -6 20 3 -11 -13 3 -12 -15 -7 10 -2 20 13 -1 -3 16 -18 -5 15 5 -4 3 -2 4 7 24 9 26 -4 17 2 -17 -12 -5 24 4 16 -4 7 7 20 1 -5 16 -17 -13 3 -14 12 7 -13 -15 3 13 19 -6 -7 -9 17 1 -17 -19 17 -11 4 2 10 25 -5 20 -14 9 3 11 -15 18 -16 12 15 -10 3 -12 17 11 -4 3 -11 16 2 -4 -7 19 -13 4 -18 -14 -17 -4 7 11 8 16 14 -15 -1 19 15 7 11 13 -3 1 -16 -19 -8 9 -12 -19 -7 15 9 3 15 -10 19 -
+5 11 9 -3 1 -12 -8 -10 5 2 -1 18 -10 21 17 18 -16 6 -5 -16 18 6 16 -3 -9 7 19 -15 9 -6 -8 10 20 4 -2 -8 -9 4 12 -14 10 2 -11 -7 1 -13 8 9 -3 10 5 -6 -1 19 2 20 3 11 -8 -7 3 -12 4 11 -14 17 16 7 10 17 -3 1 1 -7 11 18 8 -3 -10 15 -9 6 -8 -9 16 -17 9 6 5 8 11 12 -17 -9 12 13 6 -8 14 -17 -5 9 16 3 -8 12 14 -19 -3 -11 -10 -10 3 22 -12 -19 14 -6 -12 1 -19 8 13 4 -23 -3 10 -20 14 -11 -2 -16 -5 -16 -8 1 -7 4 5 -10 -14 -14 -10 9 -18 10 19 -6 -2 16 16 -4 21 12 -14 22 13 -19 -5 2 -17 21 -11 -9 -20 -2 -15 -4 7 -6 -5 -3 -6 11 10 -17 -8 6 -1 -29 -21 5 -7 -16 -1 -14 20 10 10 -3 -1 -20 12 -9 3 1 -10 -15 -5 -2 6 -24 -15 -21 -3 -12 -9 7 10 -20 -19 -1 22 12 5 -3 14 -42 4 13 -9 46 19 3 11 2 30 -12 29 13 -41 15 -13 -16 -9 20 -35 -27 -100 1 2 7 -1 -29 8 -40 -1 -13 -24 -3 -21 2 -22 16 14 22 -3 5 -17 11 19 -28 54 6 -10 -3 10 19 -135 -31 -19 -10 -6 18 18 -15 12 14 -7 -9 -5 -7 10 20 13 -2 -4 -1 -32 -12 84 42 36 -106 26 -61 16 48 -102 -64 -16 18 -25 31 309 24 178 70218 -8 -2 -18 1 18 3 -15 -1 -11 17 2 11 -9 11 -6 2 -8 11 -16 -16 -5 -2 
+1 4 -12 17 -11 4 -12 -7 12 -4 -2 -16 -140560)
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error compiling at (src/aoc2018_1.clj:21:1).
+; Can't take value of a macro: #'clojure.core/let
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6825)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6135)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6453)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7124)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6137)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5479)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4041)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7122)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/eval (Compiler.java:7191)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval9282 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:21:1).
+; Can't take value of a macro: #'clojure.core/let
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error compiling at (src/aoc2018_1.clj:21:1).
+; Can't take value of a macro: #'clojure.core/let
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6825)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6135)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6453)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7124)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6137)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5479)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4041)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7122)
+clojure.lang.Compiler/analyze (Compiler.java:6806)
+clojure.lang.Compiler/eval (Compiler.java:7191)
+clojure.lang.Compiler/load (Compiler.java:7653)
+aoc2018-1/eval9301 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:21:1).
+; Can't take value of a macro: #'clojure.core/let
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (IllegalArgumentException) at aoc2018-1/eval9334 (aoc2018_1.clj:21).
+; contains? not supported on type: clojure.core$hash_map
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval9320 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (IllegalArgumentException) at aoc2018-1/eval9336 (REPL:21).
+; contains? not supported on type: clojure.core$hash_map
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:19:55).
+; Unmatched delimiter: ]
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval9341 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error reading source at (REPL:19:55).
+; Unmatched delimiter: ]
+clj꞉aoc2018-1꞉> 
+70357
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+70357
+clj꞉aoc2018-1꞉> 
+70357
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Execution error (NullPointerException) at aoc2018-1/eval9395 (aoc2018_1.clj:20).
+; Cannot invoke "Object.getClass()" because "x" is null
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7665)
+aoc2018-1/eval9381 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Execution error (NullPointerException) at aoc2018-1/eval9397 (REPL:20).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉aoc2018-1꞉> 

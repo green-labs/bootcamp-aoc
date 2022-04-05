@@ -31,7 +31,3 @@
 ;; #################################
 ;; ###        Refactoring        ###
 ;; #################################
-
-;; frequencies 사용하기
-;; PPAP (parse-process-aggregate-print) 원칙 따르기
-;; declarative 한 함수 이름 사용하기

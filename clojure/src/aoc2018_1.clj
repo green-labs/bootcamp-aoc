@@ -1,9 +1,17 @@
-(ns aoc2018-1)
+(ns aoc2018-1
+  (:require [clojure.java.io :as io]))
 
 ;; 파트 1
 ;; 주어진 입력의 모든 숫자를 더하시오.
 ;; 예) +10 -2 -5 +1 이 입력일 경우 4를 출력
 
+(def input-data (io/resource "day1.sample.txt"))
+(def input (map
+            Integer/parseInt
+            (doseq [line (line-seq input-data)]))
+
+  
+(reduce + input)
 
 ;; 파트 2
 ;; 주어진 입력의 숫자를 더할 때 마다 나오는 숫자 중, 처음으로 두번 나오는 숫자를 리턴하시오.
@@ -18,3 +26,4 @@
 
 ;; cycle 혹은 reductions 사용하기
 ;; loop-recur 시 let으로 바인딩하기
+

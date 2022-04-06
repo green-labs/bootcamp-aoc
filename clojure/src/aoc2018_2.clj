@@ -31,7 +31,6 @@
                                        (let [dup-twice-count (+ dup-twice-count 1)]))
                                      (recur (next strings) dup-twice-count dup-thrice-count))
                                    )
-                                ;;  (* dup-twice-count dup-thrice-count)
                                  ))
 (comment (part1-solution (get-strings-from-input "day2.sample.txt")))
 

@@ -1508,3 +1508,88 @@ clj꞉aoc2018-2꞉> 
 clj꞉aoc2018-2꞉> 
 (#{1} #{1 3 2})
 clj꞉aoc2018-2꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:67:1).
+; EOF while reading, starting at line 47
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval7638 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:67:1).
+; EOF while reading, starting at line 47
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval7659 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+; Syntax error reading source at (src/aoc2018_1.clj:67:1).
+; EOF while reading, starting at line 47
+; Evaluation of file aoc2018_1.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7660)
+aoc2018-1/eval7680 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉aoc2018-1꞉> 
+; Syntax error compiling at (src/aoc2018_1.clj:57:3).
+; Unable to resolve symbol: part2-solution2 in this context
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+70357
+clj꞉aoc2018-1꞉> 
+; Evaluating file: aoc2018_1.clj
+nil
+clj꞉aoc2018-1꞉> 
+70357
+clj꞉aoc2018-1꞉> 

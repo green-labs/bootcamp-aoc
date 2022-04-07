@@ -31,11 +31,32 @@
         (recur (next cycle-numbers) sum (conj results sum))))))
 
 
+(defn find-1st-dup-number
+  "input list에서 처음으로 중복된 element를 반환하는 함수
+   input: [-8 1 2 -8 3]
+   output: -8"
+  [numbers]
+  (reduce
+   (fn [number-set number]
+     (if (number-set number)
+       (reduced number)
+       (conj number-set number)))
+   #{0}
+   numbers))
+
+(defn part2-solution2 [numbers]
+  (->> numbers
+       cycle
+       (reductions +)
+       find-1st-dup-number))
 
 ;; reduce/reduced -> 한번 도전!!
 (comment
-  (part1-solution (get-numbers-from-input "day1.sample.txt"))
-  (part2-solution1 (get-numbers-from-input "day1.sample.txt")))
+  ;; (part1-solution (get-numbers-from-input "day1.sample.txt"))
+  ;; (part2-solution1 (get-numbers-from-input "day1.sample.txt"))
+  (->> "day1.sample.txt"
+       get-numbers-from-input
+       part2-solution2))
 
 
 

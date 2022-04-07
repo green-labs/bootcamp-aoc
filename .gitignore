@@ -1,3 +1,4 @@
 .idea/
 clojure/clojure.iml
 clojure/.calva
+.clj-kondo/

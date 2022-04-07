@@ -6,14 +6,14 @@
 ;; 주어진 입력의 모든 숫자를 더하시오.
 ;; 예) +10 -2 -5 +1 이 입력일 경우 4를 출력
 
-(defn get-numbers-from-input [filename] 
+(defn get-numbers-from-input [filename]
   (let [input (io/resource filename)]
     (map read-string
          (str/split (slurp input) #"\n"))))
 
 (defn part1-solution [numbers] (reduce + numbers))
 
-(comment (part1-solution (get-numbers-from-input "day1.sample.txt")))
+;; (comment (part1-solution (get-numbers-from-input "day1.sample.txt")))
 
 
 ;; 파트 2
@@ -21,15 +21,21 @@
 ;; 예) +3, +3, +4, -2, -4 는 10이 처음으로 두번 나오는 숫자임.
 ;; 0 -> 3 (+3) -> 6 (+3) -> 10(+4) -> 8(-2) -> 4(-4) -> 7(+3) -> 10(+3) -> ...
 
-(defn part2-solution1 [numbers] (loop [cycle-numbers (cycle numbers)
-                                       sum 0
-                                       results #{0}]
-                                  (let [sum (+ sum (first cycle-numbers))]
-                                    (if (results sum)
-                                      sum
-                                      (recur (next cycle-numbers) sum (conj results sum))))))
+(defn part2-solution1 [numbers]
+  (loop [cycle-numbers (cycle numbers)
+         sum 0
+         results #{0}]
+    (let [sum (+ sum (first cycle-numbers))]
+      (if (results sum)
+        sum
+        (recur (next cycle-numbers) sum (conj results sum))))))
 
-(comment (part2-solution1 (get-numbers-from-input "day1.sample.txt")))
+
+
+;; reduce/reduced -> 한번 도전!!
+(comment
+  (part1-solution (get-numbers-from-input "day1.sample.txt"))
+  (part2-solution1 (get-numbers-from-input "day1.sample.txt")))
 
 
 

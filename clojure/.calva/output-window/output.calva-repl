@@ -1473,3 +1473,38 @@ clj꞉aoc2018-2꞉> 
 ; Evaluating file: aoc2018_2.clj
 ; Evaluating file: aoc2018_2.clj
 ; Evaluating file: aoc2018_2.clj
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.9.0"},cider/cider-nrepl {:mvn/version,"0.27.4"}}}' -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]"
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Syntax error compiling at (src/aoc2018_2.clj:34:1).
+; Unable to resolve symbol: get-freq-set in this context
+clj꞉aoc2018-2꞉> 
+; Syntax error compiling at (src/aoc2018_2.clj:29:1).
+; Unable to resolve symbol: defn in this context
+clj꞉aoc2018-2꞉> 
+; Syntax error compiling at (src/aoc2018_2.clj:29:1).
+; Unable to resolve symbol: defn in this context
+clj꞉aoc2018-2꞉> 
+; Syntax error compiling at (src/aoc2018_2.clj:34:1).
+; Unable to resolve symbol: get-freq-set in this context
+clj꞉aoc2018-2꞉> 
+nil
+clj꞉aoc2018-2꞉> 
+#'aoc2018-2/get-freq-set
+clj꞉aoc2018-2꞉> 
+#{1}
+clj꞉aoc2018-2꞉> 
+(#{1} #{1 3 2})
+clj꞉aoc2018-2꞉> 

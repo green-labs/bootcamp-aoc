@@ -6,10 +6,18 @@
 ;; 주어진 입력의 모든 숫자를 더하시오.
 ;; 예) +10 -2 -5 +1 이 입력일 경우 4를 출력
 
-(defn get-numbers-from-input [filename]
-  (let [input (io/resource filename)]
-    (map read-string
-         (str/split (slurp input) #"\n"))))
+;; (defn get-numbers-from-input [filename]
+;;   (let [input (io/resource filename)]
+;;     (map read-string
+;;          (str/split (slurp input) #"\n"))))
+
+(defn get-input [filename]
+  (-> filename
+      io/resource
+      slurp
+      str/split-lines))
+
+;; (def parse-int )
 
 (defn part1-solution [numbers] (reduce + numbers))
 
@@ -44,6 +52,7 @@
    #{0}
    numbers))
 
+
 (defn part2-solution2 [numbers]
   (->> numbers
        cycle
@@ -56,6 +65,7 @@
   ;; (part2-solution1 (get-numbers-from-input "day1.sample.txt"))
   (->> "day1.sample.txt"
        get-numbers-from-input
+       (map read-string)
        part2-solution2))
 
 

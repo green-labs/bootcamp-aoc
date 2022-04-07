@@ -47,14 +47,29 @@
 
 ;; loop recur로 풀어보기
 
-(defn is-contain
+(defn is-contain ;; 이름 고민해보기
+  ;; cnt => [true false] (2가 있는지, 3이 있는지)
   "set에 number가 있으면 input으로 받는 count를 1 증가 시켜주는 함수
    input: 2 {2 3} 1
    output: 2"
-  [number freq-set cnt]
+  [number freq-set twice-cnt thrice-cnt]
   (if (freq-set number)
-    (+ cnt 1)
+    (+ cnt 1) ;; (inc cnt)
     cnt))
+
+;; 3 5 6
+;; ([true false] [false true] [true true])
+;; (apply map vector ([true false] [false true] [true true]))
+;; => (map vector [true false] [false true] [true true])
+
+;; = 과 ==의 차이를 저희에게 가르침해주세요...
+;; partial을 이용해서
+;; is-contain-2?
+;; is-contain-3?
+(def is-contain-2?
+  (partial is-contain 2))
+
+(def is-contain-3?)
 
 ;;thread macro로 refactoring 하기
 (defn part1-solution-loop-recur [strings]
@@ -63,9 +78,17 @@
          dup-thirce-cnt 0]
     (let [cur-string (first strings)
           freq-set (get-freq-set cur-string)]
-      (if (== (count strings) 0)
+      (if (== (count strings) 0) ;; (zero? (count strings))
         (* dup-thirce-cnt dup-twice-cnt)
-        (recur (next strings) (is-contain 2 freq-set dup-twice-cnt) (is-contain 3 freq-set dup-thirce-cnt))))))
+        (recur (next strings)
+               (is-contain 2 freq-set dup-twice-cnt)
+               (is-contain 3 freq-set dup-thirce-cnt))))))
+
+;; loop-recur -> reduce -> map/filter/reduce (threading macro)
+;; 1) reduce 버전
+;; 2) map/filter/reduce 버전
+
+
 
 ;; loop-recur & 중간중간 데이터 변환하는 함수 구현하기
 ;; 
@@ -90,14 +113,21 @@
   (for [a strings
         b strings
         :when (not= a b)]
-    [a b]))
+    [a b])) ;; good
 
 (defn get-common-letter
   [str1 str2]
-  (->> map vec str1 str2
-       filter (fn [[a b]] (= a b))
-       (map first)
+  (->> (map vec str1 str2) ;; [a a] => 디버깅 해보기
+       (filter (fn [[a b]] (= a b))) ;;(a a) (b b) [] [a a] [a a] []
+       (map first) ;; [a a b c c]
        str/join))
+
+(comment
+  (map vec "abc" "abb") ;; not working
+  (get-common-letter "aabbcc" "aabccc"))
+
+;; predicate => Boolean 리턴 함수
+;; 함수명 뒤에 ?를 붙이는게 컨벤션
 
 (defn get-valid-common-letter [[str1 str2]]
   (let [common-letter (get-common-letter str1 str2)]
@@ -105,12 +135,17 @@
              (count str1))
       common-letter)))
 
-
+;; if / when
 (defn part2-solution1
   [strings]
-  (->> strings
-       get-combinations
-       get-valid-common-letter))
+  (->> strings ;; ["" "" ""]
+       get-combinations ;; [["ababa" "abbab"] ["ababa" "abbab"]]
+       (map get-valid-common-letter) ;; [nil nil nil "adbabd" nil nil nil ....]"
+       ))
+
+;; docstring에 input/output 명세
+;; predicate 함수 만들어보기
+;; 정답 구할 수 있는 로직 구현
 
 (comment
   (->> "day2.sample.txt"

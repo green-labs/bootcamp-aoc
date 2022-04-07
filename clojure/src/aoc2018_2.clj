@@ -1,7 +1,6 @@
 (ns aoc2018-2
   (:require [clojure.java.io :as io]
-            [clojure.string :as str]
-            [clojure.math.combinatorics :as combo]))
+            [clojure.string :as str]))
 
 
 (defn get-strings-from-input
@@ -40,13 +39,11 @@
   "문자열의 특정 문자가 몇번 등장~~
   input: abcdef
   output: #{1}"
-  [string] (->> string
-                frequencies
-                vals
-                set))
-
-
-
+  [string]
+  (->> string
+       frequencies
+       vals
+       set))
 
 ;; loop recur로 풀어보기
 
@@ -80,27 +77,47 @@
 ;;     재귀호출해라!)
 
 
+;; step1: 문자열 쌍 구하기
+;; step2: 두 문자열 비교해서 다른 부분만 filtering
+;; 
+;; (defn get-string-pair
+;;   [strings]
+;;   (combo/combinations strings 2))
 
 
-;;step1 모든 순서쌍 구하기
-;;step2 같은 위치에 있지 않은 것만 filter
-;;step3 filter된 리스트의 길이가 1인지 확인
-;;step4 길이가 1인 나머지 부분만 return
+(defn get-combinations
+  [strings]
+  (for [a strings
+        b strings
+        :when (not= a b)]
+    [a b]))
+
+(defn get-common-letter
+  [str1 str2]
+  (->> map vec str1 str2
+       filter (fn [[a b]] (= a b))
+       (map first)
+       str/join))
+
+(defn get-valid-common-letter [[str1 str2]]
+  (let [common-letter (get-common-letter str1 str2)]
+    (when (= (+ 1 (count common-letter))
+             (count str1))
+      common-letter)))
+
 
 (defn part2-solution1
   [strings]
   (->> strings
-       comb/combinations
-       count))
+       get-combinations
+       get-valid-common-letter))
 
 (comment
   (->> "day2.sample.txt"
        get-strings-from-input
-       part1-solution-loop-recur)
-  ;; (->> "day2.sample.txt"
-  ;;      get-strings-from-input
-  ;;      part2-solution1)
-  )
+       part2-solution1))
+
+
 
 
 

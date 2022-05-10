@@ -211,3 +211,9 @@ Temporary Items
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,clojure,intellij,vscode,emacs
+clojure/.calva/
+clojure/.cli-kondo/
+.calva
+.clj-kondo/
+clj-kondo/.cache
+.clj-kondo/**

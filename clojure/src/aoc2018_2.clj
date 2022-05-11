@@ -27,11 +27,12 @@
 ;; map을 써보자 {}
 
 (defn getChars [text]
-  (println text)
+  (println (first text))
   (println "###########"))
 
 (defn getlines [value]
-  (for [text value] (getChars [(seq text)])))
+  (println "value" value)
+  (for [text (first value)] (getChars [(seq text)])))
 
 (defn day2-1 []
   (getlines[day2-source]))

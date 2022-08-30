@@ -5,11 +5,8 @@
 ;; 주어진 입력의 모든 숫자를 더하시오.
 ;; 예) +10 -2 -5 +1 이 입력일 경우 4를 출력
 
-#_(def vals (string/split-lines
-           (slurp "resources/2018_1_sample.txt")))
-
-
-#_(apply + (map #(Integer/parseInt %) 
+;; parse input file to int vector and utilize "apply" to sum
+(apply + (map #(Integer/parseInt %) 
              (string/split-lines 
              (slurp "resources/2018_1_sample.txt"))))
 
@@ -22,47 +19,35 @@
 
 
 
-(def infile (map #(Integer/parseInt %)
+(def infile 
+  "parse input file to int vector
+   input: file of int list lined by enter
+   output: int vector
+   "
+  (map #(Integer/parseInt %)
                (string/split-lines
                 (slurp "resources/2018_1_sample.txt"))))
 
-;(contains? sum 1)
-;(def t 0)
-;(let [t (+ (last sum) (first vals))] prn t)
-;(sum 1)
-;(sum 0)
-;(last sum)
-;(first vals)
-;(+ (last sum) 1)
-;(+ nil 1) 
-;(let [t 1] [(conj t sum)])
 
-;(conj sum 1)
-(defn chksum [vals] 
-    (loop [v (rest vals)
-           tempsum (first vals)
-           setofsum #{}]
-      (prn tempsum)
-        (if (or (empty? v) (contains? setofsum tempsum))
-          (prn "answer" tempsum) 
-          (recur (rest v)
-                 (+ tempsum (first v))
-                 (conj setofsum tempsum)))))
-      
-      #_(defn chksum [setofsum vals]
-    (let [t 0] (prn t)
-         (let [t (+ t (first vals))] (prn t) 
-          (if (or (= (last vals) nil) (contains? setofsum t)) 
-            t 
-            (comp (rest vals) (conj setofsum t) (prn setofsum))))))
+(defn check-sum 
+  "return the partial sum which showed twice
+   using loop [vector partial-sum set-of-sum] & recur 
+   input: int vector
+   output: int value stands for the partial sum
+   "
+  [vals]
+  (loop [v (rest vals)
+         tempsum (first vals)
+         setofsum #{}]
+         ;(prn "initi "v)
+    (if (contains? setofsum tempsum)
+      tempsum
+      (let [nv (if (empty? v) vals v)]
+        ;(prn nv v)
+        (recur (rest nv)
+               (+ tempsum (first nv))
+               (conj setofsum tempsum))))))
 
-#_(defn chksum [setofsum vals]
- (loop [v vals]
-    (if (empty? v)
-      v
-      (recur (rest v)
-             ))))
-     ; )
 
-(chksum infile)
+(check-sum infile)
 ;(prn infile sum)

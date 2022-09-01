@@ -42,23 +42,6 @@
        (slurp)
        (string/split-lines)))
 
-;(parse-file-to-str-line "2018_3_sample.txt")
-
-;(let [[all id x y w h](re-find #"#(\d+) @ (\d+),(\d+): (\d)x(\d)" "#1 @ 1,3: 4x4")] [x y w h])
-
-#_(defn parse-str-to-fabric-info
-    "filter fabric information from input string
-   input: string of information
-   output: map with fabric keyword and value"
-    [input]
-    (let [[all id x y w h]
-          (re-find #"#(\d+) @ (\d+),(\d+): (\d)x(\d)" input)]
-      #_[x y w h]))
-
-#_(map #(re-find #"#(\d+) @ (\d+),(\d+): (\d)x(\d)" %) ["#1 @ 1,3: 4x4"
-                                                        "#2 @ 3,1: 4x4"
-                                                        "#3 @ 5,5: 2x2"])
-
 (defn fabric-info-str-to-int
   "parse fabric information string to integer value
    input: string vector including fabric info [#1@1,3:4x4 1 1 3 4 4]
@@ -73,8 +56,6 @@
         input]
     (map #(Integer/parseInt %) [starting-x starting-y width height])))
 
-;(fabric-info-str-to-int ["#1 @ 1,3: 4x4" "1" "1" "3" "4" "4"])
-
 (defn make-set-of-fabric-in-need
   [input]
   "make set of fabric coordinate which we need with given x, y, width, height
@@ -88,11 +69,6 @@
     (for [x (range starting-x (+ starting-x width))
           y (range starting-y (+ starting-y height))]
       [x y])))
-;(make-coordinate-set '(1 3 4 4))
-
-;(+ 1 2 3)
-;(apply concat [[1 3] [3] [2]])
-;(concat [1 3])
 
 (count (filter #(> (second %) 1) {[1 3] 1, [2 1] 1}))
 
@@ -105,12 +81,13 @@
 (comment
   (->> "2018_3_sample.txt"
        parse-file-to-str-line
-       (map #(re-find #"#(\d+) @ (\d+),(\d+): (\d)x(\d)" %))
+       (map #(re-find #"#(\d+) @ (\d+),(\d+): (\d+)x(\d+)" %))
        (map fabric-info-str-to-int)
        (map make-set-of-fabric-in-need)
        (apply concat)
-       frequencies 
-       count-overlap-fabric))
+       frequencies
+       count-overlap-fabric)
+  )
 
 ;; (->> "2018_3_sample.txt"
 ;;      parse-file-to-str-line

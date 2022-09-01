@@ -1,6 +1,7 @@
 (ns aoc2018_3
   (:require [clojure.string :as string]
-            [clojure.java.io :as io]))
+            [clojure.java.io :as io]
+            [clojure.set :as set]))
 
 
 ;; 파트 1
@@ -9,11 +10,6 @@
 ;; #1 @ 1,3: 4x4 {:x 1 :y 3 :xlen 4 :ylen 4} => for {1,3 1,4 1,5 1,6 "2,3"} range!! for 도 쓰기 좋음
 ;; #2 @ 3,1: 4x4 {3,1 }
 ;; #3 @ 5,5: 2x2
-;; parsing 해서 :x :y :xlen :ylen 의 map으로 만들고 싶음..
-;; 그 다음에 {x1, y1}, {x2, y2}.. 를 생성 (string이어도 될듯)
-;; {"1,3" "1,4" "1,5",...."3,3" "3,4"....}  count str("","") [[1 2] [1 3]] vector of vector로.. 
-;;{3,1 3,2 3,3} count
-;;union {1,3 1,4 } sum-count - union-count
 
 ;; 규칙으로 포맷 정의 가능 regular expression 으로 => replace 몇개  
 
@@ -47,36 +43,37 @@
    input: string vector including fabric info [#1@1,3:4x4 1 1 3 4 4]
    output: (1 3 4 4)"
   [input]
-  (let [[all
+  (let [[_
          id
          starting-x
          starting-y
          width
          height]
         input]
-    (map #(Integer/parseInt %) [starting-x starting-y width height])))
+    (map #(Integer/parseInt %) [id starting-x starting-y width height])))
 
 (defn make-set-of-fabric-in-need
   [input]
   "make set of fabric coordinate which we need with given x, y, width, height
-   input: (5 5 2 2)
+   input: (5 5 2 2) => {:starting-x 5 :starting-y 5}//vector index에 의미를 부여하지 않도록 받을때부터 map으로
    output: [5 5] [5 6] [6 5] [6 6]"
-  (let [[starting-x
+  (let [[id
+         starting-x
          starting-y
          width
          height]
         input]
-    (for [x (range starting-x (+ starting-x width))
-          y (range starting-y (+ starting-y height))]
-      [x y])))
-
-(count (filter #(> (second %) 1) {[1 3] 1, [2 1] 1}))
+    {:id id
+     :fab-set
+     (set (for [x (range starting-x (+ starting-x width))
+                y (range starting-y (+ starting-y height))]
+            [x y]))}))
 
 (defn count-overlap-fabric
   [input]
   (count
-   (filter
-    #(> (second %) 1) input)))
+   (filter (fn [[_ v]] (> v 1))
+    input)))
 
 (comment
   (->> "2018_3_sample.txt"
@@ -84,36 +81,62 @@
        (map #(re-find #"#(\d+) @ (\d+),(\d+): (\d+)x(\d+)" %))
        (map fabric-info-str-to-int)
        (map make-set-of-fabric-in-need)
+       (map :fab-set)
        (apply concat)
        frequencies
-       count-overlap-fabric)
-  )
-
-;; (->> "2018_3_sample.txt"
-;;      parse-file-to-str-line
-;;      (map #(re-find #"#(\d+) @ (\d+),(\d+): (\d)x(\d)" %))
-;;      (map #(fabric-info-str-to-int %))
-;;      (map #(make-set-of-fabric-in-need %))
-;;      (let [total-set [[]]]
-;;        #_(map #(conj total-set %))
-;;        (conj total-set [1 2])
-;;        (prn total-set))
-;;      )
-
-;;질문!!
-;;->>를 쓰면 re-find는 되는데 let이 안되고, ->를 쓰면 re-find가 에러나고 let은 안남
-;;
-
-#_(defn parse-str-to-fabric-info
-    "filter fabric information from input string
-   input: string of information
-   output: map with fabric keyword and value"
-    [input]
-    (-> input
-        (re-find #"#(\d+) @ (\d+),(\d+): (\d)x(\d)" %)
-        (let [[all id x y w h] %])))
+       count-overlap-fabric))
 
 ;; 파트 2
 ;; 입력대로 모든 격자를 채우고 나면, 정확히 한 ID에 해당하는 영역이 다른 어떤 영역과도 겹치지 않음
 ;; 위의 예시에서는 ID 3 이 ID 1, 2와 겹치지 않음. 3을 출력.
 ;; 겹치지 않는 영역을 가진 ID를 출력하시오. (문제에서 답이 하나만 나옴을 보장함)
+
+(defn get-overlap-fabric
+  [input]
+  (->> input
+       (mapcat :fab-set)
+       (frequencies)))
+
+
+(defn parse-fabric-data
+  [input]
+  (->> input
+       parse-file-to-str-line
+       (map #(re-find #"#(\d+) @ (\d+),(\d+): (\d+)x(\d+)" %))
+       (map fabric-info-str-to-int)
+       (map make-set-of-fabric-in-need)))
+
+
+(defn make-overlap-map
+  [input]
+  (->> input
+       (mapcat :fab-set)
+       frequencies
+       (filter (fn [[_ v]] (> v 1)))
+       keys)
+)
+(defn count-inter-with-id
+  [overlap-map fabric] 
+  (count
+   (set/intersection
+    (set overlap-map)
+    (set (:fab-set fabric)))))
+
+(defn compare-overlap-fabric
+  [input]
+  (let [overlap-map (make-overlap-map input)
+        ]
+    (:id (first 
+    (filter
+     #(zero? ((partial count-inter-with-id overlap-map) %))
+     input))
+  ))
+)  
+
+(comment
+  (->> "2018_3_sample.txt"
+       parse-fabric-data
+       compare-overlap-fabric
+       )
+)
+

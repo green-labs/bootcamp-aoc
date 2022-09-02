@@ -8,14 +8,7 @@
 ;; 우선은 reduce ~~로 if로
 ;; input parsing을 두번 : line 별로 -> 그 다음 정리
 ;;앞의 타임스탬프를 먼저 자르고 뒤에 처리 정렬 (sort로)
-(comment
-  (let [:id 10]
-    ...asleep~~~ 
-    (:id 99)
 
-
-  )
-)
 ;; [1518-11-01 00:05] falls asleep :id 10
 ;; [1518-11-01 00:25] wakes up
 ;; [1518-11-01 00:30] falls asleep
@@ -74,18 +67,6 @@
       {:id id
        :minute minute}))))
 
-(count '((5 25) (30 55)))
-;(make-sleep-table "#10" '((5 25) (30 55)))
-(comment
-  (cond 
-    
-    #"\S+ \S+"
-    )
-
-  )
-(re-find #"(?:\d+-)(\d+)-(\d+) (\d+):(\d+)] (\S+) (\S+)" "[1518-11-01 00:05] Guard #10 begins shift")
-;(map #(re-find #"#(\d+) @ (\d+),(\d+): (\d+)x(\d+)" %))
-
 (defn fabric-info-str-to-int
   "parse fabric information string to integer value
    input: string vector including fabric info [#1@1,3:4x4 1 1 3 4 4]
@@ -107,39 +88,57 @@
      :id id
      }))
 
-(= "Guard" "Guars")
-
 (defn max-sleep-guard
   [input]
   (->> input
-       (map :id) 
+       (map :id)
        frequencies ;; {"#10" 50, "#99" 33}
        (sort-by val) ;; (["#99" 33] ["#10" 50])
        last ;;["#10" 50]
        first ;;"#10"
-       ;(re-find #"\d+")
-  ))
+       ))
+
 (defn max-sleep-guard-minute
   [id input]
   (->> input
+       ;(prn "id"id)
        (filter #(= (:id %) id))
        frequencies
        (sort-by val)
        last
        first
-       :minute
-       )
-  
-  )
+       :minute)
+)
 (defn find-sleepyhead
   [input]
-  (let [sleepy-id (max-sleep-guard input)
-        ]
-    (* 
-     (max-sleep-guard-minute sleepy-id input)
-     sleepy-id
-    ))
+  (let [sleepy-id (max-sleep-guard input)]
+    (*
+       (max-sleep-guard-minute sleepy-id input)
+       (Integer/parseInt (re-find #"\d+" sleepy-id))))
 )
+(comment
+  (->> "2018_4_sample.txt"
+       parse-file-to-str-line
+       sort
+       (map #(re-find #"(?:\d+-)(\d+)-(\d+) (\d+):(\d+)] (\S+) (\S+)" %))
+       (map fabric-info-str-to-int)
+       (partition-by #(= (:guard %) "Guard"))
+       (partition 2)
+       (map make-guard-day)
+       (mapcat make-sleep-table)
+       (apply concat)
+       find-sleepyhead       
+       )
+)
+
+(defn max-frequent-sleep-min
+  [input]
+  (let [id (Integer/parseInt (re-find #"\d+" (:id input)))
+        min (:minute input)]
+    (* id min)))
+;; 파트 2
+;; 주어진 분(minute)에 가장 많이 잠들어 있던 가드의 ID과 그 분(minute)을 곱한 값을 구하라.
+
 (comment
   (->> "2018_4_sample.txt"
        parse-file-to-str-line
@@ -152,10 +151,9 @@
        (map make-guard-day)
        (mapcat make-sleep-table)
        (apply concat)
-       (max-sleep-guard-minute "#99") 
-       ;max-sleep-guard
-       
-       )
-)
-;; 파트 2
-;; 주어진 분(minute)에 가장 많이 잠들어 있던 가드의 ID과 그 분(minute)을 곱한 값을 구하라.
+       frequencies
+       (sort-by val)
+       last
+       first
+       max-frequent-sleep-min
+       ))

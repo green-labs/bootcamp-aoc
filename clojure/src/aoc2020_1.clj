@@ -17,7 +17,7 @@
 
 (defn make-sum-multiply
   "make a map of sum and multiply of input
-   input: 1721 979 366 299 675 1456
+   input: 1721 979 366 299 675 1456 1010 1010
    output: 
    ({:sum 2700, :mul 1684859}
    {:sum 2435, :mul 1425424}
@@ -26,13 +26,15 @@
   [input]
   (for [num1 input
         num2 input
-        :when (< num1 num2)]
+        :when (< num1 num2)] ;;not= num1 num2  (< ) nth % (range (count input))
     {:sum (+ num1 num2)
      :mul (* num1 num2)}))
 
+;;찾아보기 ! 100c2 combination library
+
 (comment
   (->> "aoc2020_1_sample.txt"
-       
+
        ;parse
        parse-file-to-str
        (map #(Integer/parseInt %))
@@ -41,8 +43,11 @@
        make-sum-multiply
 
        ;aggregation and print
-       (filter #(= (:sum %) (int 2020))))
+       (filter #(= (:sum %) 2020)) ;;some, get.. get by value
+       ;first
+       (map :mul)
   )
+)
 
 ;;part 2
 
@@ -58,7 +63,7 @@
   (for [num1 input
         num2 input
         num3 input
-        :when (and (< num1 num2) (< num2 num3))]
+        :when (< num1 num2 num3)] ;중복피하기 조건 (< num1 num2 num3)
     {:sum (+ num1 num2 num3)
      :mul (* num1 num2 num3)}))
 
@@ -74,5 +79,16 @@
        make-sum-multiply-three
 
        ;aggregation and print
-       (filter #(= (:sum %) (int 2020)))
+       (filter #(= (:sum %) 2020))
        ))
+
+
+;; (ns example.core
+;;   (:require [clojure.math.combinatorics :as combo]))
+
+
+;; ; COMBINATIONS
+;; ; all the unique ways of taking t different elements from items
+;; (combo/combinations [1 2 3] 2)
+;; ;;=> ((1 2) (1 3) (2 3))
+;; https://github.com/clojure/math.combinatorics

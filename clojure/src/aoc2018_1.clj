@@ -10,3 +10,23 @@
 ;; 예) +3, +3, +4, -2, -4 는 10이 처음으로 두번 나오는 숫자임.
 ;; 0 -> 3 (+3) -> 6 (+3) -> 10(+4) -> 8(-2) -> 4(-4) -> 7(+3) -> 10(+3) -> ...
 
+
+
+(defn parse-input [input]
+  (map #(read-string %) (clojure.string/split-lines (slurp input))))
+
+(defn plus-with-reaches-value [input reaches now-value]
+  (let [plus-value (+ (if (empty? input) 0 (first input)) now-value)]
+    (if (contains? reaches plus-value)
+      plus-value
+      (recur (conj (vec (rest input)) (first input)) (set (conj reaches plus-value)) plus-value)
+      ))
+  )
+
+(comment
+  (parse-input "resources/day1.txt")
+  (reduce + (parse-input "resources/day1.txt"))
+  (plus-with-reaches-value (vec (parse-input "resources/day1.txt")) #{} 0)
+  )
+
+

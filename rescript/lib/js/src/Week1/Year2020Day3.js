@@ -2,10 +2,48 @@
 'use strict';
 
 var Fs = require("fs");
+var Caml_int32 = require("rescript/lib/js/caml_int32.js");
 
-var input = Fs.readFileSync("input/Week1/Year2020Day3.sample.txt", "utf8");
+var input = Fs.readFileSync("input/Week1/Year2020Day3.txt", "utf8");
 
 console.log(input);
 
+var x = {
+  contents: 0
+};
+
+var trees = {
+  contents: 0
+};
+
+input.trim().split("\n").forEach(function (row, index) {
+      if (index > 0) {
+        x.contents = x.contents + 3 | 0;
+        if (row.charAt(Caml_int32.mod_(x.contents, row.length)) === "#") {
+          trees.contents = trees.contents + 1 | 0;
+          return ;
+        } else {
+          return ;
+        }
+      }
+      
+    });
+
+console.log(trees.contents, "trees.");
+
+console.log(input.trim().split("\n").reduce((function (trees2, row, index) {
+            if (index <= 0) {
+              return trees2;
+            }
+            var col = Math.imul(index, 3);
+            if (row.charAt(Caml_int32.mod_(col, row.length)) === "#") {
+              return trees2 + 1 | 0;
+            } else {
+              return trees2;
+            }
+          }), 0), "trees.");
+
 exports.input = input;
+exports.x = x;
+exports.trees = trees;
 /* input Not a pure module */

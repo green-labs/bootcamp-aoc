@@ -47,14 +47,14 @@ let parsedInput = input->parser
 parsedInput->Array.get(1)->Js.log // #.#...#...#....#.........#..#..
 parsedInput->Array.get(322)->Js.log // .....#......#..#...#.#.....#...
 
-parsedInput->executor(1, 1)->Js.log
-parsedInput->executor(3, 1)->Js.log
-parsedInput->executor(5, 1)->Js.log
-parsedInput->executor(7, 1)->Js.log
-parsedInput->executor(1, 2)->Js.log
+parsedInput->executor(1, 1)->Js.log // 80
+parsedInput->executor(3, 1)->Js.log // 162
+parsedInput->executor(5, 1)->Js.log // 77
+parsedInput->executor(7, 1)->Js.log // 83
+parsedInput->executor(1, 2)->Js.log // 37
 
 (parsedInput->executor(1, 1) *.
 parsedInput->executor(3, 1) *.
 parsedInput->executor(5, 1) *.
 parsedInput->executor(7, 1) *.
-parsedInput->executor(1, 2))->Js.log
+parsedInput->executor(1, 2))->Js.log // 3064612320

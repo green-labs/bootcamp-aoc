@@ -21,7 +21,7 @@ function contains(str, index, $$char) {
 }
 
 function executor(arr, x, y) {
-  return Belt_Array.reduceWithIndex(arr, 0, (function (matchCnt, item, index) {
+  return Belt_Array.reduceWithIndex(arr, 0.0, (function (matchCnt, item, index) {
                 if (index > 0 && Caml_int32.mod_(index, y) === 0 && contains(item, Caml_int32.mod_(Math.imul(x, Js_math.floor_int(Caml_int32.div(index, y))), item.length), "#")) {
                   return matchCnt + 1.0;
                 } else {

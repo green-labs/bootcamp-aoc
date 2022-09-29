@@ -19,12 +19,12 @@ let contains = (str: string, index: int, char: string) => {
 // x: shift amount to the right
 // y: shift amount to the bottom
 let executor = (arr: array<string>, x: int, y: int) => {
-  arr->Array.reduceWithIndex(Belt.Float.fromInt(0), (matchCnt, item, index) => {
+  arr->Array.reduceWithIndex(0.0, (matchCnt, item, index) => {
     if (
       index > 0 &&
       mod(index, y) === 0 &&
       item->contains(
-        mod(x * Js.Math.floor_int(Belt.Float.fromInt(index / y)), item->Js.String2.length),
+        mod(x * (index / y)->Float.fromInt->Js.Math.floor_int, item->Js.String2.length),
         "#",
       )
     ) {

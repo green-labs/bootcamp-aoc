@@ -3,7 +3,7 @@
 
 var Fs = require("fs");
 
-var input = Fs.readFileSync("input/Week1/Year2020Day3.sample.txt", "utf8");
+var input = Fs.readFileSync("../../../../input/Week1/Year2020Day3.sample.txt", "utf8");
 
 console.log(input);
 

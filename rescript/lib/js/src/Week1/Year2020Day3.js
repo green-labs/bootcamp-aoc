@@ -2,6 +2,7 @@
 'use strict';
 
 var Fs = require("fs");
+var Belt_Array = require("rescript/lib/js/belt_Array.js");
 var Caml_array = require("rescript/lib/js/caml_array.js");
 var Caml_int32 = require("rescript/lib/js/caml_int32.js");
 
@@ -34,9 +35,9 @@ function getSumOfTrees(trees) {
 }
 
 function solution(input, movements) {
-  return getSumOfTrees(movements.map(function (movement) {
-                  return getTrees(getFootPrint(input, movement, 0, 0)).length;
-                }));
+  return getSumOfTrees(Belt_Array.map(movements, (function (m) {
+                    return getTrees(getFootPrint(input, m, 0, 0)).length;
+                  })));
 }
 
 var movements = [

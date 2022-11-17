@@ -2,6 +2,7 @@
 'use strict';
 
 var Fs = require("fs");
+var Belt_Option = require("rescript/lib/js/belt_Option.js");
 var Caml_option = require("rescript/lib/js/caml_option.js");
 var Caml_splice_call = require("rescript/lib/js/caml_splice_call.js");
 
@@ -19,7 +20,11 @@ function getBinaryNumber(input) {
                   case "R" :
                       return "1";
                   default:
-                    return "0";
+                    throw {
+                          RE_EXN_ID: "Invalid_argument",
+                          _1: "Invalid input",
+                          Error: new Error()
+                        };
                 }
               }).join("");
 }
@@ -42,22 +47,16 @@ function checkSeatIsExist(inputs, seatId) {
   return inputs.includes(seatId);
 }
 
-function getMySeat(seatId) {
-  if (seatId !== undefined) {
-    return seatId + 1 | 0;
-  } else {
-    return 0;
-  }
-}
-
 function getMissingSeatId(inputs) {
-  return getMySeat(Caml_option.undefined_to_opt(inputs.find(function (input) {
-                      if (inputs.includes(input + 1 | 0)) {
-                        return false;
-                      } else {
-                        return inputs.includes(input + 2 | 0);
-                      }
-                    })));
+  return Belt_Option.getExn(Belt_Option.map(Caml_option.undefined_to_opt(inputs.find(function (input) {
+                          if (inputs.includes(input + 1 | 0)) {
+                            return false;
+                          } else {
+                            return inputs.includes(input + 2 | 0);
+                          }
+                        })), (function (x) {
+                    return x + 1 | 0;
+                  })));
 }
 
 function solutionPart1(param) {
@@ -80,7 +79,6 @@ exports.getDecimalNumber = getDecimalNumber;
 exports.calculateSeatId = calculateSeatId;
 exports.getMaxValue = getMaxValue;
 exports.checkSeatIsExist = checkSeatIsExist;
-exports.getMySeat = getMySeat;
 exports.getMissingSeatId = getMissingSeatId;
 exports.solutionPart1 = solutionPart1;
 exports.solutionPart2 = solutionPart2;

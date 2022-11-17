@@ -37,9 +37,9 @@ type getMissingSeatIdTypes = (array<int>) => int
  * getInputData() -> ['FBFBBFFRLR', 'BFFFBBFRRR', 'FFFBBBFRRR', 'BBFFBBFRLL']
  */
 let getInputData: getInputDataTypes = () => 
-    Node.Fs.readFileAsUtf8Sync("../../../../input/Week1/Year2020Day5.sample.txt") 
-    -> Js.String.trim
-    |> Js.String.split("\n")
+  Node.Fs.readFileAsUtf8Sync("../../../../input/Week1/Year2020Day5.sample.txt") 
+  -> Js.String.trim
+  |> Js.String.split("\n")
 
 
 /**
@@ -52,18 +52,17 @@ let getInputData: getInputDataTypes = () =>
  * getBinaryNumber('FBFBBFFRLR') -> '0101100101'
  */
 let getBinaryNumber: getBinaryNumberTypes = (input) => 
-    input
-    -> Js.String2.split("")
-    -> Js.Array2.map((x) => 
-        switch x {
-        | "F" => "0"
-        | "B" => "1"
-        | "L" => "0"
-        | "R" => "1"
-        | _ => "0"
-        }
-    )
-    -> Js.Array2.joinWith("")
+  input
+  -> Js.String2.split("")
+  -> Js.Array2.map((x) => 
+    switch x {
+    | "F" => "0"
+    | "B" => "1"
+    | "L" => "0"
+    | "R" => "1"
+    | _ => raise (Invalid_argument("Invalid input"))
+    })
+  -> Js.Array2.joinWith("")
 
 
 /**
@@ -76,9 +75,9 @@ let getBinaryNumber: getBinaryNumberTypes = (input) =>
  * getDecimalNumber('0101100101') -> 357
  */
 let getDecimalNumber: getDecimalNumberTypes = (binary) =>
-    `0b${binary}`
-    -> Js.Float.fromString
-    -> Belt.Int.fromFloat
+  `0b${binary}`
+  -> Js.Float.fromString
+  -> Belt.Int.fromFloat
 
 
 /**
@@ -91,12 +90,12 @@ let getDecimalNumber: getDecimalNumberTypes = (binary) =>
  * calculateSeatId(['FBFBBFFRLR', 'BFFFBBFRRR', 'FFFBBBFRRR', 'BBFFBBFRLL']) -> [357, 567, 119, 820]
  */
 let calculateSeatId: calculateSeatIdTypes = (inputs) => 
-    inputs
-    -> Js.Array2.map((input) =>
-        input
-        ->getBinaryNumber
-        ->getDecimalNumber
-    )
+  inputs
+  -> Js.Array2.map((input) =>
+    input
+    ->getBinaryNumber
+    ->getDecimalNumber
+  )
 
 
 /**
@@ -109,20 +108,15 @@ let calculateSeatId: calculateSeatIdTypes = (inputs) =>
  * getMaxValue([1, 2, 3, 4, 5]) -> 5
  */
 let getMaxValue: getMaxValueTypes = (inputs) => 
-    inputs
-    ->Js.Math.maxMany_int
+  inputs
+  ->Js.Math.maxMany_int
 
 
 let checkSeatIsExist: checkSeatIsExistTypes = (inputs) => (seatId) =>  
-    inputs
-    ->Js.Array2.includes(seatId)
+  inputs
+  ->Js.Array2.includes(seatId)
 
-let getMySeat = (seatId: option<int>) => 
-    switch seatId {
-    | Some(seatId) => seatId + 1
-    | None => 0
-    }
-    
+
 /**
  * getMissingSeatId
  * @description 빠진 seatId를 구한다.
@@ -136,26 +130,27 @@ let getMySeat = (seatId: option<int>) =>
  * 따라서, 두 좌석 사이에 기존 배열에 없는 좌석을 찾는것이 문제의 요구사항 이기 때문에 n + 1은 없고 n + 2가 있을 때와 같이 조건을 처리하였다.
  */
 let getMissingSeatId = (inputs) => 
-    inputs
-    ->Js.Array2.find((input) => 
-        !checkSeatIsExist(inputs)(input + 1) && 
-        checkSeatIsExist(inputs)(input + 2)
-    )
-    ->getMySeat
+  inputs
+  ->Js.Array2.find((input) => 
+      !checkSeatIsExist(inputs)(input + 1) && 
+      checkSeatIsExist(inputs)(input + 2)
+  )
+  ->Belt.Option.map((x) => x + 1)
+  ->Belt.Option.getExn
 
 
 let solutionPart1 = () => 
-    getInputData()
-    ->calculateSeatId
-    ->getMaxValue
-    ->Js.log
+  getInputData()
+  ->calculateSeatId
+  ->getMaxValue
+  ->Js.log
 
 
 let solutionPart2 = () =>
-    getInputData()
-    ->calculateSeatId
-    ->getMissingSeatId
-    ->Js.log
+  getInputData()
+  ->calculateSeatId
+  ->getMissingSeatId
+  ->Js.log
 
 
 solutionPart1()

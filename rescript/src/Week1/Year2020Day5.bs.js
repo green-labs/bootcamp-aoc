@@ -45,10 +45,18 @@ const calculateSeatId = inputs => {
   });
 };
 
+// // part 2
+const getMissingSeatId = seatIds => {
+  return (
+    seatIds.find(seatId => {
+      return !seatIds.includes(seatId + 1) && seatIds.includes(seatId + 2);
+    }) + 1
+  );
+};
+
 const solution = inputs => {
   const seatIds = calculateSeatId(inputs);
-
-  return getMaximumNumber(seatIds);
+  return getMissingSeatId(seatIds);
 };
 
 const input = getInputData();

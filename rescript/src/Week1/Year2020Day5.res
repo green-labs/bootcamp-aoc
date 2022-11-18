@@ -129,14 +129,18 @@ let checkSeatIsExist: checkSeatIsExistTypes = (inputs) => (seatId) =>
  * 모든 좌석은 꽉 차있고 빈 좌석은 없기 때문에 내가 찾고자 하는 좌석은 배열에 없는 좌석이다.
  * 따라서, 두 좌석 사이에 기존 배열에 없는 좌석을 찾는것이 문제의 요구사항 이기 때문에 n + 1은 없고 n + 2가 있을 때와 같이 조건을 처리하였다.
  */
-let getMissingSeatId = (inputs) => 
+let getMissingSeatId: getMissingSeatIdTypes = (inputs) => {
+  // 매번 무거운 inputs를 넘겨주는것이 바람직 하지 않아서 해당 값은 자유변수로, 사용할 땐 중첩함수로
+  let checkSeatIsExistInnerFunc = checkSeatIsExist(inputs)
+
   inputs
   ->Js.Array2.find((input) => 
-      !checkSeatIsExist(inputs)(input + 1) && 
-      checkSeatIsExist(inputs)(input + 2)
+      !checkSeatIsExistInnerFunc(input + 1) && 
+      checkSeatIsExistInnerFunc(input + 2)
   )
   ->Belt.Option.map((x) => x + 1)
   ->Belt.Option.getExn
+}
 
 
 let solutionPart1 = () => 

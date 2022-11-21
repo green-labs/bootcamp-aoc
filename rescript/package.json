@@ -15,6 +15,5 @@
   "devDependencies": {
     "nodemon": "^2.0.20",
     "rescript": "^10.0.1"
-  },
-  "dependencies": {}
+  }
 }

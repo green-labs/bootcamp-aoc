@@ -13,9 +13,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^2.0.20"
-  },
-  "dependencies": {
+    "nodemon": "^2.0.20",
     "rescript": "^10.0.1"
-  }
+  },
+  "dependencies": {}
 }
